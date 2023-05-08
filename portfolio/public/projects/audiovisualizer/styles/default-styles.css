@@ -1,0 +1,89 @@
+canvas {
+  margin-bottom: 20px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+  background: #fafafa;
+}
+
+#controls {
+  margin:auto;
+  width: fit-content;
+  padding: 10px;
+  border: 3px solid;
+  border-radius: 20px;
+}
+#controls section{
+  width: fit-content;
+  margin: auto;
+  padding: 5px;
+}
+#audio{
+  height: 30px;
+  width: 300px;
+  position: relative;
+  top: 8px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+#volumeLabel {
+  margin-left: 1rem;
+}
+
+section {
+  margin-bottom: 1rem;
+}
+
+#playButton {
+  font-size: 1.2rem;
+  width: 6rem;
+}
+
+button[data-playing="yes"]:after {
+  content: "Pause";
+}
+
+button[data-playing="no"]:after {
+  content: "Play";
+}
+
+#fsButton {
+  font-size: 1.2rem;
+  width: 8rem;
+}
+
+* {
+  text-align: center;
+  background: #54504c;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  letter-spacing: 0.5px;
+  color: pink;
+}
+
+button{
+  background-color: #2e2b28;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+select{
+  background-color: #2e2b28;
+  border-color: black;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+input{
+  accent-color: pink;
+  font-weight: normal;
+}
+
+#upload{
+  width: 190px
+}
+
+.cb:hover{
+  background-color: #2e2b28;
+}
+
+h1{
+  text-shadow: 3px 3px 3px #2e2b28;
+}

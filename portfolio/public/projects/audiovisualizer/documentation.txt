@@ -1,0 +1,24 @@
+Audio Effects
+    - Added treble, bass, and distortion nodes
+    - At first the visualizer did not reflect the changes, but fixed by changing order of nodes
+
+Sprite
+    - Fish class
+    - Draws a fish at a specific location
+    - y value is based on audio data, so fish move up and down to the music
+    - The fish also start behind the waves to add a cool effect
+
+App data
+    - JSON file contains:
+        - Title
+        - Audio file names
+        - Image file names
+
+Aesthetics
+    - Grade (0-15%) = 15%
+    - I love the aesthetics of my visualizer, I think it looks really nice
+    - The gradient makes the image look way nicer
+    - Noise looks good ontop of the gradient and image
+    - Fish come out of the water
+    - Bars are on the sun
+    - Invert colors looks really cool, and I made the rest of the elements on the page match

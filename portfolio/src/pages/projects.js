@@ -6,6 +6,11 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { GithubIcon } from '@/components/Icons'
 import audioVisualizer from '../../public/images/projects/audiovisualizer.png'
+import mealFinder from '../../public/images/projects/mealfinder.png'
+import nysParks from '../../public/images/projects/nystateparks.png'
+import survive from '../../public/images/projects/survive.png'
+import truth from '../../public/images/projects/truth.png'
+import oldPortfolio from '../../public/images/projects/oldPortfolio.png'
 import TransitionEffect from '@/components/TransitionEffect'
 
 // FeaturedProject component (Shows more details about a project)
@@ -25,13 +30,13 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
 
                 <div className='w-1/2 flex flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6'>
                     <span className='text-primary font-medium text-xl dark:text-primaryDark xs:text-base'>{type}</span>
-                    <Link href={link} target='_blank' className='hover:underline underline-offset-2'>
+                    <Link href={link} className='hover:underline underline-offset-2'>
                         <h2 className='my-2 w-full text-left text-4xl font-bold dark:text-light sm:text-sm'>{title}</h2>
                     </Link>
                     <p className='my-2 font-medium text-dark dark:text-light sm:text-sm'>{summary}</p>
                     <div className='mt-2 flex items-center'>
                         <Link href={github} target='_blank' className='w-10'> <GithubIcon /> </Link>
-                        <Link href={link} target='_blank'
+                        <Link href={link}
                             className='ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold
                         dark:bg-light dark:text-dark sm:px-4 sm:text-base'
                         >Visit Project</Link>
@@ -62,7 +67,7 @@ const Project = ({ type, title, img, link, github }) => {
                         <h2 className='my-2 w-full text-left text-3xl font-bold lg:text-2xl'>{title}</h2>
                     </Link>
                     <div className='w-full mt-2 flex items-center justify-between'>
-                        <Link href={link} target='_blank'
+                        <Link href={link}
                             className='text-lg font-semibold underline underline-offset-2 md:text-base'
                         >Visit</Link>
                         <Link href={github} target='_blank' className='w-8 md:w-6'> <GithubIcon /> </Link>
@@ -83,7 +88,7 @@ const projects = () => {
             <TransitionEffect />
             <main className='w-full mb-16 flex flex-col items-center justify-center dark:text-light'>
                 <Layout className='pt-16'>
-                    <AnimatedText text="Imagination Trumps Knowledge!"
+                    <AnimatedText text="View My Work!"
                         className='mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl'
                     />
                     {/* Projects List */}
@@ -96,53 +101,56 @@ const projects = () => {
                             visualizer utilizes the Web Audio API as well as the Canvas API to retrieve audio 
                             data from an MP3 file and draw meaningful visualizations of it on the screen. It 
                             is also very aesthetically pleasing and I'm extremely happy with how it turned out."
-                            link="/"
+                            link="/audiovisualizer"
                             type="Featured Project"
-                            github="/"
+                            github="https://github.com/realbcole/portfolio/tree/main/portfolio/public/projects/audiovisualizer"
                         />
 
                         <Project
-                            title="Audio Visualizer"
-                            img={audioVisualizer}
-                            link="/"
+                            title="Meal Finder"
+                            img={mealFinder}
+                            link="/mealfinder"
                             type="Project"
-                            github="/"
+                            github="https://github.com/realbcole/portfolio/tree/main/portfolio/public/projects/mealfinder"
                         />
 
                         <Project
-                            title="Audio Visualizer"
-                            img={audioVisualizer}
-                            link="/"
+                            title="NYS Park Buddy"
+                            img={nysParks}
+                            link="/nysparkbuddy"
                             type="Project"
-                            github="/"
+                            github="https://github.com/realbcole/portfolio/tree/main/portfolio/public/projects/nysparkbuddy"
                         />
 
                         <FeaturedProject
-                            title="Audio Visualizer"
-                            img={audioVisualizer}
-                            summary="Audio Visualizer was originally a homework assignment for my class Rich 
-                            Media and Web Applications I. It has been greatly improved upon since. The audio 
-                            visualizer utilizes the Web Audio API as well as the Canvas API to retrieve audio 
-                            data from an MP3 file and draw meaningful visualizations of it on the screen. It 
-                            is also very aesthetically pleasing and I'm extremely happy with how it turned out."
-                            link="/"
+                            title="Truth"
+                            img={truth}
+                            summary="Truth is a game I made along with a team of four for the 2022 Brackey's 
+                            game jam. My contributions to the project include all of the programming, the main
+                             menu, and some level design. The theme for the game jam was 'It is not real.' 
+                             With this theme I thought of the concept of a platformer where there are platforms
+                              you see that are not real and there are platforms that you can't see that are 
+                              real. You play as a red headed man who collects mushrooms that allow him to see 
+                              the truth and rocks to slingshot at the mushroom enemies. There are also wall 
+                              mushrooms that shoot projectiles at the player."
+                            link="/truth"
                             type="Featured Project"
-                            github="/"
+                            github="https://github.com/realbcole/portfolio/tree/main/portfolio/public/projects/truth"
                         />
                         <Project
-                            title="Audio Visualizer"
-                            img={audioVisualizer}
-                            link="/"
+                            title="Old Portfolio"
+                            img={oldPortfolio}
+                            link="/oldportfolio"
                             type="Project"
-                            github="/"
+                            github="https://github.com/realbcole/portfolio/tree/main/portfolio/public/projects/oldportfolio"
                         />
 
                         <Project
-                            title="Audio Visualizer"
-                            img={audioVisualizer}
-                            link="/"
+                            title="Survive"
+                            img={survive}
+                            link="/survive"
                             type="Project"
-                            github="/"
+                            github="https://github.com/realbcole/portfolio/tree/main/portfolio/public/projects/survive"
                         />
                     </div>
                 </Layout>

@@ -1,0 +1,545 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.borders {
+    width: 90%;
+    margin: auto;
+}
+
+body {
+    background-color: #E0E1DD;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #1B263B;
+    border-bottom: 1px solid #E0E1DD;
+}
+
+.button h2 {
+    color: #E0E1DD;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 150%;
+}
+
+.button {
+    width: 200px;
+    border: 1px solid #1B263B;
+}
+
+.button:hover {
+    background-color: #415A77;
+}
+
+nav a {
+    text-decoration: none;
+    color: #E0E1DD;
+}
+
+#nav {
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header {
+    position: relative;
+
+}
+
+header figure {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+
+}
+
+#skydiving {
+    width: 100%;
+    height: auto;
+}
+
+#heading {
+    width: 500px;
+    height: 80px;
+    background-color: #415A77;
+    position: absolute;
+    top: 0;
+    left: -1vw;
+
+}
+
+div#heading h1 {
+    color: #E0E1DD;
+    font-family: sans-serif;
+    font-weight: 750;
+    margin-right: auto;
+    font-size: 380%;
+    position: relative;
+    bottom: 17px;
+    left: 15px;
+}
+
+#info {
+    background-color: #778DA9;
+    position: relative;
+    display: grid;
+    grid-template-areas:
+        "text" "text" "text" "side"
+        "text" "text" "text" "side2";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
+
+}
+
+#me {
+    border: 3px solid #0D1B2A;
+    grid-column: 1/2;
+    grid-row: 1/-1;
+    margin-left: 25%;
+    margin-bottom: 25%;
+    margin-top: 25%;
+    box-shadow: 10px 10px 0px #E0E1DD;
+}
+
+#infoText {
+    margin-left: 25%;
+    margin-top: 25%;
+    /* -webkit-column-count: 2; */
+    /* column-count: 2; */
+    grid-column: 2/4;
+    grid-row: 1/-1;
+    color: #E0E1DD;
+    text-align: center;
+    text-shadow: 2px 2px #1B263B;
+    font-size: 125%;
+}
+
+#infoText span {
+    font-size: 160%;
+}
+
+#sidebox1 {
+    max-width: 300px;
+    position: absolute;
+    right: 0px;
+    top: 150px;
+}
+
+#sidebox1 img {
+    width: 100%;
+    z-index: -1;
+}
+
+#sidebox1 h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: absolute;
+    padding: 1rem;
+    color: #E0E1DD;
+    top: -15px;
+    right: 80px;
+    width: 175px;
+}
+
+#sidebox1 ul {
+    position: absolute;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 1rem;
+    color: #E0E1DD;
+    top: 30px;
+    right: 60px;
+    width: 175px;
+}
+
+#sidebox2 {
+    max-width: 300px;
+    position: absolute;
+    right: 0px;
+    top: 400px;
+}
+
+#sidebox2 img {
+    width: 100%;
+}
+
+#sidebox2 h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: absolute;
+    padding: 1rem;
+    color: #E0E1DD;
+    top: -15px;
+    right: 80px;
+    width: 175px;
+}
+
+#sidebox2 ul {
+    position: absolute;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 1rem;
+    color: #E0E1DD;
+    top: 30px;
+    right: 60px;
+    width: 175px;
+}
+
+
+.game {
+    background-color: #1B263B;
+    display: grid;
+    grid-template-areas:
+        "img heading"
+        "img text";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.game figure {
+    max-width: 800px;
+    padding: 30px;
+}
+
+.game figure img {
+    width: 100%;
+    border: 3px solid #778DA9;
+    box-shadow: 10px 10px 0px #E0E1DD;
+}
+
+.game p {
+    width: 60%;
+    margin: auto;
+    color: #E0E1DD;
+    font-size: 20px;
+    line-height: 30px;
+    position: relative;
+    bottom: 40px;
+    left: 15px;
+}
+
+.game h1 {
+    color: #E0E1DD;
+    font-family: sans-serif;
+    font-weight: 750;
+    font-size: 50px;
+    margin: auto;
+}
+
+.game a {
+    margin: auto;
+    width: 200px;
+    margin-bottom: 5vh;
+    position: relative;
+    border-radius: 10px;
+    bottom: 2vh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    color: #E0E1DD;
+}
+
+.gameLeft a {
+    left: 45vw;
+    background-color: #415A77;
+}
+
+.gameRight a {
+    background-color: #1B263B;
+
+}
+
+.game a:hover {
+    background-color: #778DA9;
+}
+
+.game a:active {
+    background-color: #E0E1DD;
+}
+
+
+.gameLeft figure {
+    grid-row: 1/-1;
+    grid-column: 1/2;
+
+}
+
+.gameLeft h1 {
+    grid-row: 1/2;
+    grid-column: 2/-1;
+}
+
+.gameLeft p {
+    grid-row: 2/-1;
+    grid-column: 2/-1;
+}
+
+.gameRight {
+    background-color: #415A77;
+}
+
+.gameRight h1 {
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+
+.gameRight figure {
+    grid-row: 1/-1;
+    grid-column: 2/-1;
+}
+
+.gameRight p {
+    grid-row: 2/-1;
+    grid-column: 1/2;
+}
+
+#moreProjects {
+    background-color: #415A77;
+    position: relative;
+    height: fit-content;
+    bottom: 20px;
+    padding: 3%;
+    border-top: 1px solid #E0E1DD;
+    border-bottom: 1px solid #E0E1DD;
+}
+
+#moreProjects p {
+    color: #E0E1DD;
+    text-align: center;
+    position: relative;
+    text-shadow: 2px 2px #1B263B;
+    font-size: 300%;
+    font-weight: bold;
+}
+
+#resume {
+    background-color: #778DA9;
+    position: relative;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#resume h1 {
+    color: #E0E1DD;
+    font-family: sans-serif;
+    font-weight: 750;
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 2px 2px #1B263B
+}
+
+#resume figure {
+    max-width: 50%;
+}
+
+#resume img {
+    width: 100%;
+}
+
+#resume a {
+    text-decoration: none;
+    color: #E0E1DD;
+}
+
+#resume a:hover {
+    color: #415A77;
+}
+
+footer {
+    background-color: #0D1B2A;
+    position: relative;
+    bottom: 40px;
+}
+
+footer p {
+    color: #E0E1DD;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: #E0E1DD;
+}
+
+footer a:hover {
+    color: #415A77;
+}
+
+@media screen and (max-width: 1450px) {
+    #info {
+        grid-template-areas:
+            "me"
+            "text"
+            "sideboxes";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    #me {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        margin: auto;
+        margin-top: 5vh;
+
+    }
+
+    #infoText {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        margin: auto;
+        clear: both;
+        margin-top: 10vh;
+        width: 50vw;
+        margin-right: 30vw;
+    }
+
+    #sidebox1 {
+        top: 640px;
+    }
+
+    #sidebox2 {
+        top: 900px;
+    }
+
+}
+
+@media screen and (max-width: 1100px) {
+    #me {
+        margin-top: 3vh;
+
+    }
+
+    #infoText {
+        margin: auto;
+        margin-top: 2vh;
+    }
+
+    #sidebox1 {
+        z-index: -2;
+    }
+
+    #sidebox2 {
+        z-index: -2;
+    }
+
+    .game {
+        grid-template-areas:
+            "heading"
+            "img"
+            "text";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .game figure {
+        grid-row: 2/3;
+        grid-column: 1/-1;
+    }
+
+    .game p {
+        grid-row: 3/-1;
+        grid-column: 1/-1;
+        margin-top: 3vh;
+    }
+
+    .game h1 {
+        grid-row: 1/2;
+        grid-column: 1/-1;
+        margin-top: 6vh;
+    }
+
+    #heading {
+        width: 300px;
+        height: 50px;
+        background-color: #415A77;
+        position: absolute;
+        top: 0;
+        left: -1vw;
+
+    }
+
+    div#heading h1 {
+        font-size: 220%;
+        bottom: 8px;
+        left: 15px;
+    }
+
+    .button {
+        width: 100px;
+        border: 1px solid #1B263B;
+    }
+
+    .button h2 {
+        font-size: 125%;
+    }
+
+    #resume figure {
+        max-width: 70%;
+    }
+
+    .game a {
+        left: 0px;
+
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #me {
+        width: 70%;
+    }
+
+    #infoText {
+        position: relative;
+        margin-bottom: 10vh;
+        margin-top: 0px;
+    }
+
+    .button {
+        width: 75px;
+        border: 1px solid #1B263B;
+    }
+
+    .button h2 {
+        font-size: 100%;
+    }
+
+    #heading {
+        width: 250px;
+        height: 40px;
+        background-color: #415A77;
+        position: absolute;
+        top: 0;
+        left: -1vw;
+
+    }
+
+    div#heading h1 {
+        font-size: 180%;
+        bottom: 8px;
+        left: 15px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    #infoText {
+        bottom: 180px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #infoText {
+        bottom: 400px;
+        margin-bottom: 10px;
+    }
+}

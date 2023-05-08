@@ -1,0 +1,5 @@
+{
+    "title" : "Audio Visualizer",
+    "audioFiles" : ["Addicted To You", "All Night All Summer", "Clarity", "Danielle (smile on my face)", "Disarm", "Innerbloom", "Love On Me", "Summertime Sadness", "Time to Pretend"],
+    "imageFiles" : ["bg.jpg", "waves.png", "deadfish.png"]
+}
