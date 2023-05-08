@@ -32,14 +32,15 @@ const contact = () => {
                         a project in mind, or just want to chat, feel free to reach out. You can find my resume below or
                         drop me a message using the contact form.
                     </p>
-                    <Link href="/resume.pdf" target="_blank"
-                        className='flex items-center bg-dark text-light p-2.5 px-6
-                rounded-lg text-lg font-semibold hover:bg-light hover:text-dark
-                border-2 border-solid border-transparent hover:border-dark dark:bg-light dark:text-dark
-                hover:dark:bg-dark hover:dark:text-light hover:dark:border-light md:p-2 md:px-4 md:text-base'>
-                        Resume
-                        <LinkArrow className={"w-6 ml-1"} />
-                    </Link>
+                    <div className='flex items-center'>
+                        <Link href="/resume.pdf" target="_blank"
+                            className='flex items-center bg-dark text-light p-2.5 px-6
+                        rounded-lg text-lg font-semibold hover:bg-light hover:text-dark
+                        border-2 border-solid border-transparent hover:border-dark dark:bg-light dark:text-dark
+                        hover:dark:bg-dark hover:dark:text-light hover:dark:border-light md:p-2 md:px-4 md:text-base'
+                        >Resume <LinkArrow className={"w-6 ml-1"} />
+                        </Link>
+                    </div>
                     <div className='flex items-center justify-between w-full lg:flex-col h-[80vh] lg:h-[800px] 
                         md:h-[700px] sm:h-[600px] xs:[h-500px] border border-dark dark:border-light my-10'>
                         <div className='flex flex-col items-center justify-between w-full'>
