@@ -5,6 +5,7 @@ import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
 import { AnimatePresence } from 'framer-motion'
 import { useRouter } from 'next/router'
+import { Analytics } from '@vercel/analytics/react'
 
 // Custom font
 const montserrat = Montserrat({
@@ -31,6 +32,7 @@ export default function App({ Component, pageProps }) {
         </AnimatePresence>
         <Footer />
       </main>
+      <Analytics />
     </>
   )
 
