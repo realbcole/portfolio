@@ -23,7 +23,7 @@ import git from '../../public/images/skills/git.png'
 import photoshop from '../../public/images/skills/photoshop.png'
 
 
-
+// Skill component
 const Skill = ({ img, name, className = "" }) => {
     return (
         <motion.div
@@ -36,7 +36,7 @@ const Skill = ({ img, name, className = "" }) => {
     )
 }
 
-
+// Skills component
 const Skills = () => {
     return (
         <>
