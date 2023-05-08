@@ -91,13 +91,17 @@ const NavBar = () => {
 
                     <button
                         onClick={() => setMode(mode === "light" ? "dark" : "light")}
-                        className={`ml-3 flex items-center justify-center rounded-full p-1
-                    ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}
-                    `}>
-                        {
-                            mode === "dark" ?
-                                <SunIcon className={"fill-dark"} /> : <MoonIcon className={"fill-dark"} />
-                        }
+                        className={`w-6 ml-3 flex items-center justify-center rounded-full p-1
+                        bg-dark text-light dark:bg-light dark:text-dark
+                                    `}>
+                        <motion.a
+                            whileHover={{ y: -2 }}
+                            whileTap={{ scale: 0.9 }}>
+                            {
+                                mode === "dark" ?
+                                    <SunIcon className={"fill-dark"} /> : <MoonIcon className={"fill-dark"} />
+                            }
+                        </motion.a>
                     </button>
                 </nav>
             </div>
@@ -130,13 +134,17 @@ const NavBar = () => {
 
                             <button
                                 onClick={() => setMode(mode === "light" ? "dark" : "light")}
-                                className={`ml-3 flex items-center justify-center rounded-full p-1 sm:ml-1
-                                    ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}
+                                className={`w-6 ml-3 flex items-center justify-center rounded-full p-1 sm:ml-1
+                                    bg-dark text-light dark:bg-light dark:text-dark
                                     `}>
-                                {
-                                    mode === "dark" ?
-                                        <SunIcon className={"fill-dark"} /> : <MoonIcon className={"fill-dark"} />
-                                }
+                                <motion.a
+                                    whileHover={{ y: -2 }}
+                                    whileTap={{ scale: 0.9 }}>
+                                    {
+                                        mode === "dark" ?
+                                            <SunIcon className={"fill-dark"} /> : <MoonIcon className={"fill-dark"} />
+                                    }
+                                </motion.a>
                             </button>
                         </nav>
                     </motion.div>
