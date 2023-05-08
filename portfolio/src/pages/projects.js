@@ -10,7 +10,7 @@ import mealFinder from '../../public/images/projects/mealfinder.png'
 import nysParks from '../../public/images/projects/nystateparks.png'
 import survive from '../../public/images/projects/survive.png'
 import truth from '../../public/images/projects/truth.png'
-import oldPortfolio from '../../public/images/projects/oldPortfolio.png'
+import oldPortfolio from '../../public/images/projects/oldportfolio.png'
 import TransitionEffect from '@/components/TransitionEffect'
 
 // FeaturedProject component (Shows more details about a project)
