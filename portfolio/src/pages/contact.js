@@ -40,7 +40,7 @@ const contact = () => {
                         <LinkArrow className={"w-6 ml-1"} />
                     </Link>
                     <div className='flex items-center justify-between w-full lg:flex-col h-[80vh] lg:h-[800px] 
-                        md:h-[700px] sm:h-[600px] xs:[h-500px] border border-light my-10'>
+                        md:h-[700px] sm:h-[600px] xs:[h-500px] border border-dark dark:border-light my-10'>
                         <div className='flex flex-col items-center justify-between w-full'>
                             <h1 className='font-bold text-center xl:text-5xl text-6xl md:text-5xl' >
                                 Reach Out!
