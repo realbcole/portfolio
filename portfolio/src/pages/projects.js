@@ -5,7 +5,7 @@ import Layout from '@/components/Layout'
 import Link from 'next/link'
 import Image from 'next/image'
 import { GithubIcon } from '@/components/Icons'
-import project1 from '../../public/images/projects/audiovisualizer.png'
+import audioVisualizer from '../../public/images/projects/audiovisualizer.png'
 import TransitionEffect from '@/components/TransitionEffect'
 
 // FeaturedProject component (Shows more details about a project)
@@ -90,7 +90,7 @@ const projects = () => {
                     <div className='grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0'>
                         <FeaturedProject
                             title="Audio Visualizer"
-                            img={project1}
+                            img={audioVisualizer}
                             summary="Audio Visualizer was originally a homework assignment for my class Rich 
                             Media and Web Applications I. It has been greatly improved upon since. The audio 
                             visualizer utilizes the Web Audio API as well as the Canvas API to retrieve audio 
@@ -103,7 +103,7 @@ const projects = () => {
 
                         <Project
                             title="Audio Visualizer"
-                            img={project1}
+                            img={audioVisualizer}
                             link="/"
                             type="Project"
                             github="/"
@@ -111,7 +111,7 @@ const projects = () => {
 
                         <Project
                             title="Audio Visualizer"
-                            img={project1}
+                            img={audioVisualizer}
                             link="/"
                             type="Project"
                             github="/"
@@ -119,7 +119,7 @@ const projects = () => {
 
                         <FeaturedProject
                             title="Audio Visualizer"
-                            img={project1}
+                            img={audioVisualizer}
                             summary="Audio Visualizer was originally a homework assignment for my class Rich 
                             Media and Web Applications I. It has been greatly improved upon since. The audio 
                             visualizer utilizes the Web Audio API as well as the Canvas API to retrieve audio 
@@ -131,7 +131,7 @@ const projects = () => {
                         />
                         <Project
                             title="Audio Visualizer"
-                            img={project1}
+                            img={audioVisualizer}
                             link="/"
                             type="Project"
                             github="/"
@@ -139,7 +139,7 @@ const projects = () => {
 
                         <Project
                             title="Audio Visualizer"
-                            img={project1}
+                            img={audioVisualizer}
                             link="/"
                             type="Project"
                             github="/"
