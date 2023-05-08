@@ -5,7 +5,7 @@ import Layout from '@/components/Layout'
 import Link from 'next/link'
 import Image from 'next/image'
 import { GithubIcon } from '@/components/Icons'
-import { audioVisualizer } from '../../public/images/projects/audiovisualizer.png'
+import audioVisualizer from '../../public/images/projects/audiovisualizer.png'
 import TransitionEffect from '@/components/TransitionEffect'
 
 // FeaturedProject component (Shows more details about a project)
