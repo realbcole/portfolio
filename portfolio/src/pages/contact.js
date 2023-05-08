@@ -38,7 +38,7 @@ const contact = () => {
                         rounded-lg text-lg font-semibold hover:bg-light hover:text-dark
                         border-2 border-solid border-transparent hover:border-dark dark:bg-light dark:text-dark
                         hover:dark:bg-dark hover:dark:text-light hover:dark:border-light md:p-2 md:px-4 md:text-base'
-                        >Resume <LinkArrow className={"w-[24px] ml-1"} />
+                        >Resume <LinkArrow />
                         </Link>
                     </div>
                     <div className='flex items-center justify-between w-full lg:flex-col h-[80vh] lg:h-[800px] 
