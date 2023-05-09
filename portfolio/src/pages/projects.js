@@ -14,7 +14,7 @@ import oldPortfolio from '../../public/images/projects/oldportfolio.png'
 import TransitionEffect from '@/components/TransitionEffect'
 
 // FeaturedProject component (Shows more details about a project)
-const FeaturedProject = ({ type, title, summary, img, link, github }) => {
+const FeaturedProject = ({ type, title, techStack, summary, img, link, github }) => {
     return (
         <div className='col-span-12'>
             <article className='w-full flex items-center justify-between rounded-3xl
@@ -33,6 +33,9 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
                     <Link href={link} className='hover:underline underline-offset-2'>
                         <h2 className='my-2 w-full text-left text-4xl font-bold dark:text-light sm:text-sm'>{title}</h2>
                     </Link>
+                    <p className='font-semibold text-dark/90 dark:text-light/90 sm:text-sm'>
+                        <span className='font-bold text-dark dark:text-light sm:text-sm'>Tech Stack: </span>
+                        {techStack}</p>
                     <p className='my-2 font-medium text-dark dark:text-light sm:text-sm'>{summary}</p>
                     <div className='mt-2 flex items-center'>
                         <Link href={github} target='_blank' className='w-10'> <GithubIcon /> </Link>
@@ -48,7 +51,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
 }
 
 // Project component (Shows a project)
-const Project = ({ type, title, img, link, github }) => {
+const Project = ({ type, title, techStack, img, link, github }) => {
     return (
         <div className='col-span-6 sm:col-span-12'>
             <article className='w-full flex flex-col items-center justify-center rounded-2xl border
@@ -66,6 +69,9 @@ const Project = ({ type, title, img, link, github }) => {
                     <Link href={link} target='_blank' className='hover:underline underline-offset-2'>
                         <h2 className='my-2 w-full text-left text-3xl font-bold lg:text-2xl'>{title}</h2>
                     </Link>
+                    <p className='font-semibold text-dark/90 dark:text-light/90 sm:text-sm'>
+                        <span className='font-bold text-dark dark:text-light sm:text-sm'>Tech Stack: </span>
+                        {techStack}</p>
                     <div className='w-full mt-2 flex items-center justify-between'>
                         <Link href={link}
                             className='text-lg font-semibold underline underline-offset-2 md:text-base'
@@ -95,6 +101,7 @@ const projects = () => {
                     <div className='grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0'>
                         <FeaturedProject
                             title="Audio Visualizer"
+                            techStack="HTML, CSS, JavaScript, AJAX, Web Audio, Canvas"
                             img={audioVisualizer}
                             summary="Audio Visualizer was originally a homework assignment for my class Rich 
                             Media and Web Applications I. It has been greatly improved upon since. The audio 
@@ -108,6 +115,7 @@ const projects = () => {
 
                         <Project
                             title="Meal Finder"
+                            techStack="HTML, CSS, JavaScript, AJAX, TheMealDB"
                             img={mealFinder}
                             link="/mealfinder"
                             type="Project"
@@ -116,6 +124,7 @@ const projects = () => {
 
                         <Project
                             title="NYS Park Buddy"
+                            techStack="HTML, CSS, JavaScript, AJAX"
                             img={nysParks}
                             link="/nysparkbuddy"
                             type="Project"
@@ -124,6 +133,7 @@ const projects = () => {
 
                         <FeaturedProject
                             title="Truth"
+                            techStack="Unity, C#"
                             img={truth}
                             summary="Truth is a game I made along with a team of four for the 2022 Brackey's 
                             game jam. My contributions to the project include all of the programming, the main
@@ -139,6 +149,7 @@ const projects = () => {
                         />
                         <Project
                             title="Old Portfolio"
+                            techStack="HTML, CSS"
                             img={oldPortfolio}
                             link="/oldportfolio"
                             type="Project"
@@ -147,6 +158,7 @@ const projects = () => {
 
                         <Project
                             title="Survive"
+                            techStack="Unity, C#"
                             img={survive}
                             link="/survive"
                             type="Project"
