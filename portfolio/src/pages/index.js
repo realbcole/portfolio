@@ -20,10 +20,10 @@ export default function Home() {
       </Head>
       <TransitionEffect />
       <main className="flex items-center text-dark w-full min-h-screen dark:text-light">
-        <Layout className='pt-0 md:pt-16 sm:pt-8'>
+        <Layout className='pt-0'>
           <div className='flex items-center justify-between w-full lg:flex-col'>
             {/* Main image */}
-            <div className='w-1/2 md:w-full pr-10 xs:pr-0 sm:pr-0'>
+            <div className='w-1/2 md:w-full pr-10 md:pr-0 pb-10'>
               <Image src={mainImageLight} alt="BCOLE" className='w-full h-auto lg:hidden md:inline-block md:w-full dark:hidden' priority
                 sizes="(max-width: 768px) 50vw, (max-width: 1200px) 50vw, 50vw" />
               <Image src={mainImageDark} alt="BCOLE" className='w-full h-auto lg:hidden md:dark:inline-block md:w-full hidden dark:inline-block' priority
