@@ -63,7 +63,7 @@ const NavBar = () => {
             {/* Hamburger menu */}
             <button className='flex-col justify-center items-center hidden lg:flex' onClick={handleClick}>
                 <span className={`bg-dark dark:bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm -translate-y-0.5 
-                ${isOpen ? 'rotate-45 translate-y-1' : '-translate-y-0.5'}`}></span>
+                ${isOpen ? 'rotate-45 translate-y-2' : '-translate-y-0.5'}`}></span>
                 <span className={`bg-dark dark:bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-0.5 
                 ${isOpen ? 'opacity-0' : 'opacity-100'}`}></span>
                 <span className={`bg-dark dark:bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm translate-y-0.5
@@ -88,21 +88,22 @@ const NavBar = () => {
                         whileTap={{ scale: 0.9 }}
                         className='w-6 mx-3'
                     ><LinkedInIcon /></motion.a>
-
-                    <button
-                        onClick={() => setMode(mode === "light" ? "dark" : "light")}
-                        className={`w-6 ml-3 flex items-center justify-center rounded-full p-1
+                    <motion.a
+                        whileHover={{ y: -2 }}
+                        whileTap={{ scale: 0.9 }}>
+                        <button
+                            onClick={() => setMode(mode === "light" ? "dark" : "light")}
+                            className={`w-6 ml-3 flex items-center justify-center rounded-full p-1
                         bg-dark text-light dark:bg-light dark:text-dark
                                     `}>
-                        <motion.a
-                            whileHover={{ y: -2 }}
-                            whileTap={{ scale: 0.9 }}>
+
                             {
                                 mode === "dark" ?
                                     <SunIcon className={"fill-dark"} /> : <MoonIcon className={"fill-dark"} />
                             }
-                        </motion.a>
-                    </button>
+
+                        </button>
+                    </motion.a>
                 </nav>
             </div>
 
@@ -131,21 +132,22 @@ const NavBar = () => {
                                 whileTap={{ scale: 0.9 }}
                                 className='w-6 mx-3 sm:mx-1'
                             ><LinkedInIcon /></motion.a>
-
-                            <button
-                                onClick={() => setMode(mode === "light" ? "dark" : "light")}
-                                className={`w-6 ml-3 flex items-center justify-center rounded-full p-1 sm:ml-1
+                            <motion.a
+                                whileHover={{ y: -2 }}
+                                whileTap={{ scale: 0.9 }}>
+                                <button
+                                    onClick={() => setMode(mode === "light" ? "dark" : "light")}
+                                    className={`w-6 ml-3 flex items-center justify-center rounded-full p-1 sm:ml-1
                                     bg-dark text-light dark:bg-light dark:text-dark
                                     `}>
-                                <motion.a
-                                    whileHover={{ y: -2 }}
-                                    whileTap={{ scale: 0.9 }}>
+
                                     {
                                         mode === "dark" ?
                                             <SunIcon className={"fill-dark"} /> : <MoonIcon className={"fill-dark"} />
                                     }
-                                </motion.a>
-                            </button>
+
+                                </button>
+                            </motion.a>
                         </nav>
                     </motion.div>
                     : null

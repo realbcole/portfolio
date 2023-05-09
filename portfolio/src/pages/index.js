@@ -7,7 +7,7 @@ import AnimatedText from '@/components/AnimatedText'
 import Link from 'next/link'
 import { LinkArrow } from '@/components/Icons'
 import HireMe from '@/components/HireMe'
-import lightBulb from '../../public/images/svgs/lightbulb.svg'
+import lightBulb from '../../public/images/profile/lightbulb.png'
 import TransitionEffect from '@/components/TransitionEffect'
 
 // Home page
@@ -19,11 +19,11 @@ export default function Home() {
         <meta name="description" content="content-description" />
       </Head>
       <TransitionEffect />
-      <main className="flex items-center text-dark w-full min-h-screen dark:text-light">
-        <Layout className='pt-0'>
+      <main className="text-dark w-full min-h-screen dark:text-light">
+        <Layout className='pt-16'>
           <div className='flex items-center justify-between w-full lg:flex-col'>
             {/* Main image */}
-            <div className='w-1/2 md:w-full pr-10 md:pr-0 pb-10'>
+            <div className='w-1/2 lg:w-3/4 md:w-full pr-10 lg:pr-0 pb-10'>
               <Image src={mainImageLight} alt="BCOLE" className='w-full h-auto lg:hidden md:inline-block md:w-full dark:hidden' priority
                 sizes="(max-width: 768px) 50vw, (max-width: 1200px) 50vw, 50vw" />
               <Image src={mainImageDark} alt="BCOLE" className='w-full h-auto lg:hidden md:dark:inline-block md:w-full hidden dark:inline-block' priority
@@ -57,7 +57,7 @@ export default function Home() {
         </Layout>
         <HireMe />
         {/* Lightbulb image */}
-        <div className='absolute right-8 bottom-8 inline-block w-24 md:hidden'>
+        <div className='absolute right-4 bottom-0 inline-block w-64 md:hidden'>
           <Image src={lightBulb} alt="Lightbulb" className='w-full h-auto' />
         </div>
 
