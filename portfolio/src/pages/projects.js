@@ -11,6 +11,7 @@ import nysParks from '../../public/images/projects/nystateparks.png'
 import survive from '../../public/images/projects/survive.png'
 import truth from '../../public/images/projects/truth.png'
 import oldPortfolio from '../../public/images/projects/oldportfolio.png'
+import synthax from '../../public/images/projects/synt-hax.png'
 import TransitionEffect from '@/components/TransitionEffect'
 
 // FeaturedProject component (Shows more details about a project)
@@ -114,21 +115,21 @@ const projects = () => {
                         />
 
                         <Project
+                            title="Synt-Hax - AI Syntax Helper"
+                            techStack="React, ExpressJS, NodeJS, OpenAI API, TailwindCSS"
+                            img={synthax}
+                            link="https://synt-hax.vercel.app/"
+                            type="Project"
+                            github="https://github.com/realbcole/Synt-hax"
+                        />
+
+                        <Project
                             title="Meal Finder"
                             techStack="HTML, CSS, JavaScript, AJAX, TheMealDB"
                             img={mealFinder}
                             link="/mealfinder"
                             type="Project"
                             github="https://github.com/realbcole/portfolio/tree/main/portfolio/public/projects/mealfinder"
-                        />
-
-                        <Project
-                            title="Synt-Hax | AI Syntax Helper"
-                            techStack="React, ExpressJS, NodeJS, OpenAI API, TailwindCSS"
-                            img={nysParks}
-                            link="/synt-hax"
-                            type="Project"
-                            github="https://github.com/"
                         />
 
                         <FeaturedProject
