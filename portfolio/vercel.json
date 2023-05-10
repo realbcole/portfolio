@@ -1,5 +1,7 @@
 {
-    "backend": {
-        "command": "node ./public/projects/synt-hacks/backend/index.js"
+    "functions": {
+        "backend": {
+            "command": "node ./public/projects/synt-hacks/backend/index.js"
+        }
     }
 }
