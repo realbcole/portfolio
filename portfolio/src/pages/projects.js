@@ -128,7 +128,7 @@ const projects = () => {
                             img={nysParks}
                             link="/synt-hax"
                             type="Project"
-                            github="https://github.com/realbcole/portfolio/tree/main/portfolio/public/projects/synt-hax"
+                            github="https://github.com/"
                         />
 
                         <FeaturedProject

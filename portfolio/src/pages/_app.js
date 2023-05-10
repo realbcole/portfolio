@@ -26,7 +26,7 @@ export default function App({ Component, pageProps }) {
       <main className={`${montserrat.variable} font-mont bg-light dark:bg-dark w-full min-h-screen`}>
         {/* AnimatePresence is used to animate page transitions */}
         <AnimatePresence mode="wait">
-          {router.asPath !== '/synt-hax' && <NavBar />}
+          <NavBar />
           {/* Display page based on router path */}
           <Component key={router.asPath} {...pageProps} />
         </AnimatePresence>
