@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev && node ./public/projects/synt-hacks/backend/index.js",
-    "build": "next build && node ./public/projects/synt-hacks/backend/index.js",
-    "start": "next start && node ./public/projects/synt-hacks/backend/index.js",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
