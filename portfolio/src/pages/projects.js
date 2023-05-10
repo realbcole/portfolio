@@ -123,12 +123,12 @@ const projects = () => {
                         />
 
                         <Project
-                            title="NYS Park Buddy"
-                            techStack="HTML, CSS, JavaScript, AJAX"
+                            title="Synt-Hax | AI Syntax Helper"
+                            techStack="React, ExpressJS, NodeJS, OpenAI API, TailwindCSS"
                             img={nysParks}
-                            link="/nysparkbuddy"
+                            link="/synt-hax"
                             type="Project"
-                            github="https://github.com/realbcole/portfolio/tree/main/portfolio/public/projects/nysparkbuddy"
+                            github="https://github.com/realbcole/portfolio/tree/main/portfolio/public/projects/synt-hax"
                         />
 
                         <FeaturedProject
@@ -163,6 +163,15 @@ const projects = () => {
                             link="/survive"
                             type="Project"
                             github="https://github.com/realbcole/portfolio/tree/main/portfolio/public/projects/survive"
+                        />
+
+                        <Project
+                            title="NYS Park Buddy"
+                            techStack="HTML, CSS, JavaScript, AJAX"
+                            img={nysParks}
+                            link="/nysparkbuddy"
+                            type="Project"
+                            github="https://github.com/realbcole/portfolio/tree/main/portfolio/public/projects/nysparkbuddy"
                         />
                     </div>
                 </Layout>
