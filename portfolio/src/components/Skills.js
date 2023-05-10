@@ -21,6 +21,7 @@ import visualstudio from '../../public/images/skills/visualstudio.png'
 import vscode from '../../public/images/skills/vscode.png'
 import git from '../../public/images/skills/git.png'
 import photoshop from '../../public/images/skills/photoshop.png'
+import express from '../../public/images/skills/expressjs.png'
 
 
 // Skill component
@@ -55,6 +56,7 @@ const Skills = () => {
                 <Skill img={node} name='NodeJS' />
                 <Skill img={nextDark} name='NextJS' className='hidden dark:flex' />
                 <Skill img={nextLight} name='NextJS' className='dark:hidden' />
+                <Skill img={express} name='ExpressJS' />
                 <Skill img={tailwind} name='Tailwind CSS' />
                 <Skill img={flutter} name='Flutter' />
                 <Skill img={unityDark} name='Unity' className='hidden dark:flex' />
