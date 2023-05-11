@@ -10,7 +10,8 @@ const Footer = () => {
             <Layout className='py-8 flex items-center justify-between lg:flex-col lg:py-6'>
                 <span>{new Date().getFullYear()} &copy; All Rights Reserved</span>
                 <div className='flex items-center lg:py-2'>
-                    Built with&nbsp;<span className='text-primary dark:text-primaryDark text-2xl px-1'>&#9825;</span>
+                    Built with&nbsp;<span className='text-primary dark:text-primaryDark text-2xl px-1'>&#9825;&nbsp;</span>
+                    by Brandon Cole
                 </div>
                 <Link href="/contact">Contact Me</Link>
             </Layout>

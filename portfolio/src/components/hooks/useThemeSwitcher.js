@@ -6,7 +6,7 @@ const useThemeSwitcher = () => {
     const preferDarkQuery = '(prefers-color-scheme: dark)';
 
     // useState hook
-    const [mode, setMode] = useState("");
+    const [mode, setMode] = useState("dark");
 
     // useEffect hook
     useEffect(() => {

@@ -24,7 +24,8 @@ const FeaturedProject = ({ type, title, techStack, summary, img, link, github })
                 <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark
                      rounded-br-3xl dark:bg-light xs:-right-2 sm:h-[102%] xs:w-full xs:rounded-[1.5rem]' />
 
-                <Link href={link} target='_blank' className='w-1/2 cursor-pointer overflow-hidden rounded-lg lg:w-full'>
+                <Link href={link} target='_blank'
+                    className='w-1/2 cursor-pointer overflow-hidden rounded-lg lg:w-full'>
                     <Image src={img} alt={title} className="w-full h-auto" priority
                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw" />
                 </Link>
@@ -40,7 +41,7 @@ const FeaturedProject = ({ type, title, techStack, summary, img, link, github })
                     <p className='my-2 font-medium text-dark dark:text-light sm:text-sm'>{summary}</p>
                     <div className='mt-2 flex items-center'>
                         <Link href={github} target='_blank' className='w-10'> <GithubIcon /> </Link>
-                        <Link href={link}
+                        <Link href={link} target='_blank'
                             className='ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold
                         dark:bg-light dark:text-dark sm:px-4 sm:text-base'
                         >Visit Project</Link>
@@ -74,7 +75,7 @@ const Project = ({ type, title, techStack, img, link, github }) => {
                         <span className='font-bold text-dark dark:text-light sm:text-sm'>Tech Stack: </span>
                         {techStack}</p>
                     <div className='w-full mt-2 flex items-center justify-between'>
-                        <Link href={link}
+                        <Link href={link} target='_blank'
                             className='text-lg font-semibold underline underline-offset-2 md:text-base'
                         >Visit</Link>
                         <Link href={github} target='_blank' className='w-8 md:w-6'> <GithubIcon /> </Link>
@@ -100,7 +101,7 @@ const projects = () => {
                     />
                     {/* Projects List */}
                     <div className='grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0'>
-                        <FeaturedProject
+                        {/* {                        <FeaturedProject
                             title="Audio Visualizer"
                             techStack="HTML, CSS, JavaScript, AJAX, Web Audio, Canvas"
                             img={audioVisualizer}
@@ -112,15 +113,39 @@ const projects = () => {
                             link="/audiovisualizer"
                             type="Featured Project"
                             github="https://github.com/realbcole/portfolio/tree/main/portfolio/public/projects/audiovisualizer"
+                        />} */}
+
+                        <FeaturedProject
+                            title="Synt-Hax - AI Syntax Helper"
+                            techStack="React, ExpressJS, NodeJS, OpenAI API, TailwindCSS"
+                            img={synthax}
+                            summary="Synt-Hax is a React-based app that leverages OpenAI's language 
+                            processing API to provide developers with syntax suggestions and explanations. 
+                            It helps users overcome syntax roadblocks and increase programming productivity. 
+                            The app uses ExpressJS and NodeJS for server-side communication and TailwindCSS 
+                            for UI styling."
+                            link="https://synt-hax.vercel.app/"
+                            type="Featured Project"
+                            github="https://github.com/realbcole/Synt-hax"
                         />
 
-                        <Project
+                        {/* {<Project
                             title="Synt-Hax - AI Syntax Helper"
                             techStack="React, ExpressJS, NodeJS, OpenAI API, TailwindCSS"
                             img={synthax}
                             link="https://synt-hax.vercel.app/"
                             type="Project"
                             github="https://github.com/realbcole/Synt-hax"
+                        />} */}
+
+
+                        <Project
+                            title="Audio Visualizer"
+                            techStack="HTML, CSS, JavaScript, AJAX, Web Audio, Canvas"
+                            img={audioVisualizer}
+                            link="/audiovisualizer"
+                            type="Project"
+                            github="https://github.com/realbcole/portfolio/tree/main/portfolio/public/projects/audiovisualizer"
                         />
 
                         <Project
@@ -141,9 +166,8 @@ const projects = () => {
                              menu, and some level design. The theme for the game jam was 'It is not real.' 
                              With this theme I thought of the concept of a platformer where there are platforms
                               you see that are not real and there are platforms that you can't see that are 
-                              real. You play as a red headed man who collects mushrooms that allow him to see 
-                              the truth and rocks to slingshot at the mushroom enemies. There are also wall 
-                              mushrooms that shoot projectiles at the player."
+                              real. The player collects mushrooms in order to see the truth and rocks to 
+                              slingshot at the mushroom enemies."
                             link="/truth"
                             type="Featured Project"
                             github="https://github.com/realbcole/portfolio/tree/main/portfolio/public/projects/truth"

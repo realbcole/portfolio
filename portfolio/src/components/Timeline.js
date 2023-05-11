@@ -86,17 +86,6 @@ const Timeline = () => {
                         Academic Honor Society that recognizes the academic accomplishments of fraternity and sorority
                         members."
                     />
-                    {/* {
-                    <Event
-                        type="Full Stack Intern - Ditch"
-                        time="Summer 2023"
-                        significance="2023 - Interned at Ditch"
-                        place="Remote"
-                        info="Ditch is a startup that is building a platform to help people pay off their debts using
-                        artificial intelligence. I will be working as a full stack intern on the engineering team."
-                    />} */}
-
-
                 </ul>
 
             </div>
