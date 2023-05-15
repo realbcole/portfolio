@@ -19,7 +19,16 @@ const contact = () => {
         <>
             <Head>
                 <title>Brandon Cole | Contact</title>
-                <meta name="description" content="any description" />
+                <meta name="description" content="Connect with Brandon Cole, a creative developer 
+                specializing in game design and development. Reach out for inquiries, collaborations,
+                 or just a friendly chat. Visit the Contact page to access the contact form and view
+                  his location on an interactive map" />
+                <meta property="og:type" content="website" />
+                <meta property="og:title" content="Brandon Cole | Contact" />
+                <meta property="og:description" content="Connect with Brandon Cole, a creative developer 
+                specializing in game design and development. Reach out for inquiries, collaborations,
+                 or just a friendly chat. Visit the Contact page to access the contact form and view
+                  his location on an interactive map" />
             </Head>
             <TransitionEffect />
             <main className='w-full mb-16 flex flex-col items-center justify-center dark:text-light'>

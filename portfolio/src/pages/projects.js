@@ -91,7 +91,14 @@ const projects = () => {
         <>
             <Head>
                 <title>Brandon Cole | Projects</title>
-                <meta name="description" content="any description" />
+                <meta name="description" content="Explore Brandon Cole's portfolio of projects, 
+                including a diverse range of web applications, Unity games, and AI-powered tools. 
+                Discover the tech stack and details behind each project and visit their live demos." />
+                <meta property="og:type" content="website" />
+                <meta property="og:title" content="Brandon Cole | Contact" />
+                <meta property="og:description" content="Explore Brandon Cole's portfolio of projects, 
+                including a diverse range of web applications, Unity games, and AI-powered tools. 
+                Discover the tech stack and details behind each project and visit their live demos." />
             </Head>
             <TransitionEffect />
             <main className='w-full mb-16 flex flex-col items-center justify-center dark:text-light'>

@@ -52,8 +52,19 @@ const about = () => {
     return (
         <>
             <Head>
-                <title>Brandon Cole | About Page</title>
-                <meta name="description" content="any description" />
+                <title>Brandon Cole | About</title>
+                <meta name="description" content="Discover the story behind Brandon Cole, a passionate 
+                developer with a unique blend of creativity and technical expertise. With a background 
+                in game design and development, Brandon brings a commitment to design excellence and 
+                user-centered thinking to every project. Learn more about his skills and passion for 
+                creating digital experiences that leave a lasting impression on users." />
+                <meta property="og:type" content="website" />
+                <meta property="og:title" content="Brandon Cole | About" />
+                <meta property="og:description" content="Discover the story behind Brandon Cole, a passionate 
+                developer with a unique blend of creativity and technical expertise. With a background 
+                in game design and development, Brandon brings a commitment to design excellence and 
+                user-centered thinking to every project. Learn more about his skills and passion for 
+                creating digital experiences that leave a lasting impression on users." />
             </Head>
             <TransitionEffect />
             <main className='flex w-full flex-col items-center justify-center dark:text-light'>

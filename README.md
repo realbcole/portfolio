@@ -33,9 +33,9 @@
 - [TailwindCSS](https://tailwindcss.com/) - Styling
 - [Framer Motion](https://www.framer.com/motion/) - Animations
 - [React Hook Form](https://react-hook-form.com/) - Form Validation
-- [Mapbox] (https://www.mapbox.com/) - Map
+- [Mapbox](https://www.mapbox.com/) - Map
 
-### Resources Used in This Project <a name = "resources"></a>
+## Resources Used in This Project <a name = "resources"></a>
 
 - Images on the home page created using https://www.midjourney.com/
 - Fonts from https://fonts.google.com/ <br />

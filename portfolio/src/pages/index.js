@@ -16,7 +16,16 @@ export default function Home() {
     <>
       <Head>
         <title>Brandon Cole | Home</title>
-        <meta name="description" content="content-description" />
+        <meta name="description" content="Explore the intersection of design and development 
+        with Brandon Cole's portfolio website. Combining code and creativity, Brandon creates 
+        engaging interactive experiences with a focus on user-centered design. Browse his 
+        portfolio to see his unique approach to digital experiences." />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Brandon Cole | Contact" />
+        <meta property="og:description" content="Explore the intersection of design and development 
+        with Brandon Cole's portfolio website. Combining code and creativity, Brandon creates 
+        engaging interactive experiences with a focus on user-centered design. Browse his 
+        portfolio to see his unique approach to digital experiences." />
       </Head>
       <TransitionEffect />
       <main className="text-dark w-full min-h-screen dark:text-light">
