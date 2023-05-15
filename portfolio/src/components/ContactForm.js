@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useForm } from 'react-hook-form';
 
 // ContactForm component
@@ -10,11 +10,17 @@ const ContactForm = () => {
         formState: { errors }
     } = useForm();
 
+    const [formSuccess, setFormSuccess] = useState(null);
+
     // Submit form
     const onSubmit = async (e) => {
         const isValid = await trigger();
         if (!isValid) {
             e.preventDefault();
+            setFormSuccess(false);
+        }
+        else {
+            setFormSuccess(true);
         }
     }
 
@@ -29,7 +35,7 @@ const ContactForm = () => {
                 {/* Name input for form submission */}
                 <input
                     className='w-full bg-dark font-semibold placeholder-light/75 p-3 rounded-lg
-                        dark:bg-light dark:placeholder-dark/75'
+                        dark:bg-light dark:placeholder-dark/75 dark:text-dark/75 text-light/75'
                     type='text'
                     placeholder='NAME'
                     {...register("name", {
@@ -48,7 +54,7 @@ const ContactForm = () => {
                 {/* Email input for form submission */}
                 <input
                     className='w-full bg-dark font-semibold placeholder-light/75 p-3 mt-5 rounded-lg
-                        dark:bg-light dark:placeholder-dark/75'
+                        dark:bg-light dark:placeholder-dark/75 dark:text-dark/75 text-light/75'
                     type='text'
                     placeholder='EMAIL'
                     {...register("email", {
@@ -68,7 +74,7 @@ const ContactForm = () => {
                 {/* Message input for form submission */}
                 <textarea
                     className='w-full bg-dark font-semibold placeholder-light/75 p-3 mt-5 rounded-lg
-                        dark:bg-light dark:placeholder-dark/75'
+                        dark:bg-light dark:placeholder-dark/75 dark:text-dark/75 text-light/75'
                     type='text'
                     placeholder='MESSAGE'
                     rows="4"
@@ -87,10 +93,16 @@ const ContactForm = () => {
                         </p>
                     )
                 }
+                {
+                    // Form success message
+                    formSuccess === null ? null :
+                        formSuccess ? <p className='text-primary dark:text-primaryDark font-semibold'>Form submitted successfully!</p> :
+                            <p className='text-primary dark:text-primaryDark font-semibold'>Form submission failed.</p>
+                }
                 <button
                     type='submit'
                     className='flex items-center bg-dark text-light p-2.5 px-6
-                            rounded-lg text-lg font-semibold hover:bg-light hover:text-dark my-5
+                            rounded-lg text-lg font-semibold hover:bg-light hover:text-dark mt-2
                             border-2 border-solid border-transparent hover:border-dark dark:bg-light dark:text-dark
                             hover:dark:bg-dark hover:dark:text-light hover:dark:border-light md:p-2 md:px-4 md:text-base'>
                     Submit
