@@ -12,6 +12,7 @@ import survive from '../../public/images/projects/survive.png'
 import truth from '../../public/images/projects/truth.png'
 import oldPortfolio from '../../public/images/projects/oldportfolio.png'
 import synthax from '../../public/images/projects/synt-hax.png'
+import adminDashboard from '../../public/images/projects/dashboard.png'
 import TransitionEffect from '@/components/TransitionEffect'
 
 // FeaturedProject component (Shows more details about a project)
@@ -108,20 +109,6 @@ const projects = () => {
                     />
                     {/* Projects List */}
                     <div className='grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0'>
-                        {/* {                        <FeaturedProject
-                            title="Audio Visualizer"
-                            techStack="HTML, CSS, JavaScript, AJAX, Web Audio, Canvas"
-                            img={audioVisualizer}
-                            summary="Audio Visualizer was originally a homework assignment for my class Rich 
-                            Media and Web Applications I. It has been greatly improved upon since. The audio 
-                            visualizer utilizes the Web Audio API as well as the Canvas API to retrieve audio 
-                            data from an MP3 file and draw meaningful visualizations of it on the screen. It 
-                            is also very aesthetically pleasing and I'm extremely happy with how it turned out."
-                            link="/audiovisualizer"
-                            type="Featured Project"
-                            github="https://github.com/realbcole/portfolio/tree/main/portfolio/public/projects/audiovisualizer"
-                        />} */}
-
                         <FeaturedProject
                             title="Synt-Hax - AI Syntax Helper"
                             techStack="React, ExpressJS, NodeJS, OpenAI API, TailwindCSS"
@@ -136,15 +123,14 @@ const projects = () => {
                             github="https://github.com/realbcole/Synt-hax"
                         />
 
-                        {/* {<Project
-                            title="Synt-Hax - AI Syntax Helper"
-                            techStack="React, ExpressJS, NodeJS, OpenAI API, TailwindCSS"
-                            img={synthax}
-                            link="https://synt-hax.vercel.app/"
+                        <Project
+                            title="Fullstack Admin Dashboard"
+                            techStack="MERN Stack, React, Material UI, Nivo Charts, Redux Toolkit, NodeJS, ExpressJS, Mongoose, MongoDB"
+                            img={adminDashboard}
+                            link="https://admin-frontend-mqei.onrender.com/dashboard"
                             type="Project"
-                            github="https://github.com/realbcole/Synt-hax"
-                        />} */}
-
+                            github="https://github.com/realbcole/fullstack-admin"
+                        />
 
                         <Project
                             title="Audio Visualizer"
@@ -153,15 +139,6 @@ const projects = () => {
                             link="/audiovisualizer"
                             type="Project"
                             github="https://github.com/realbcole/portfolio/tree/main/portfolio/public/projects/audiovisualizer"
-                        />
-
-                        <Project
-                            title="Meal Finder"
-                            techStack="HTML, CSS, JavaScript, AJAX, TheMealDB"
-                            img={mealFinder}
-                            link="/mealfinder"
-                            type="Project"
-                            github="https://github.com/realbcole/portfolio/tree/main/portfolio/public/projects/mealfinder"
                         />
 
                         <FeaturedProject
@@ -180,13 +157,14 @@ const projects = () => {
                             github="https://github.com/realbcole/portfolio/tree/main/portfolio/public/projects/truth"
                         />
                         <Project
-                            title="Old Portfolio"
-                            techStack="HTML, CSS"
-                            img={oldPortfolio}
-                            link="/oldportfolio"
+                            title="Meal Finder"
+                            techStack="HTML, CSS, JavaScript, AJAX, TheMealDB"
+                            img={mealFinder}
+                            link="/mealfinder"
                             type="Project"
-                            github="https://github.com/realbcole/portfolio/tree/main/portfolio/public/projects/oldportfolio"
+                            github="https://github.com/realbcole/portfolio/tree/main/portfolio/public/projects/mealfinder"
                         />
+
 
                         <Project
                             title="Survive"
@@ -204,6 +182,14 @@ const projects = () => {
                             link="/nysparkbuddy"
                             type="Project"
                             github="https://github.com/realbcole/portfolio/tree/main/portfolio/public/projects/nysparkbuddy"
+                        />
+                        <Project
+                            title="Old Portfolio"
+                            techStack="HTML, CSS"
+                            img={oldPortfolio}
+                            link="/oldportfolio"
+                            type="Project"
+                            github="https://github.com/realbcole/portfolio/tree/main/portfolio/public/projects/oldportfolio"
                         />
                     </div>
                 </Layout>
