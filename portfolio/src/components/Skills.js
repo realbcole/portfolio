@@ -22,7 +22,10 @@ import vscode from '../../public/images/skills/vscode.png'
 import git from '../../public/images/skills/git.png'
 import photoshop from '../../public/images/skills/photoshop.png'
 import express from '../../public/images/skills/expressjs.png'
-
+import mongoose from '../../public/images/skills/mongoose.png'
+import mui from '../../public/images/skills/mui.png'
+import redux from '../../public/images/skills/redux.png'
+import mongoDb from '../../public/images/skills/mongodb.png'
 
 // Skill component
 const Skill = ({ img, name, className = "" }) => {
@@ -57,6 +60,10 @@ const Skills = () => {
                 <Skill img={nextDark} name='NextJS' className='hidden dark:flex' />
                 <Skill img={nextLight} name='NextJS' className='dark:hidden' />
                 <Skill img={express} name='ExpressJS' />
+                <Skill img={redux} name='Redux Toolkit' />
+                <Skill img={mongoose} name='Mongoose' />
+                <Skill img={mongoDb} name='MongoDB' />
+                <Skill img={mui} name='Material UI' />
                 <Skill img={tailwind} name='Tailwind CSS' />
                 <Skill img={flutter} name='Flutter' />
                 <Skill img={unityDark} name='Unity' className='hidden dark:flex' />
