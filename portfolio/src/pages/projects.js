@@ -137,7 +137,7 @@ const projects = () => {
                             title="EvoGym"
                             techStack="React, TypeScript, Vite, TailwindCSS, Framer Motion, Cloudflare"
                             img={evoGym}
-                            link="https://d8851c7d.gym-app-5je.pages.dev/"
+                            link="https://dd735a8d.gym-app-5je.pages.dev/"
                             type="Project"
                             github="https://github.com/realbcole/gym-app"
                         />
