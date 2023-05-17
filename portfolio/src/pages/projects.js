@@ -128,7 +128,7 @@ const projects = () => {
                             title="Fullstack Admin Dashboard"
                             techStack="MERN Stack, React, Material UI, Nivo Charts, Redux Toolkit, NodeJS, ExpressJS, Mongoose, MongoDB, Render.com"
                             img={adminDashboard}
-                            link="https://admin-frontend-mqei.onrender.com/dashboard"
+                            link="https://admin-frontend-mqei.onrender.com/"
                             type="Project"
                             github="https://github.com/realbcole/fullstack-admin"
                         />
@@ -164,7 +164,31 @@ const projects = () => {
                             github="https://github.com/realbcole/portfolio/tree/main/portfolio/public/projects/mealfinder"
                         />
 
+                        <Project
+                            title="NYS Park Buddy"
+                            techStack="HTML, CSS, JavaScript, AJAX"
+                            img={nysParks}
+                            link="/nysparkbuddy"
+                            type="Project"
+                            github="https://github.com/realbcole/portfolio/tree/main/portfolio/public/projects/nysparkbuddy"
+                        />
 
+
+                        <FeaturedProject
+                            title="Truth"
+                            techStack="Unity, C#"
+                            img={truth}
+                            summary="Truth is a game I made along with a team of four for the 2022 Brackey's 
+                            game jam. My contributions to the project include all of the programming, the main
+                            menu, and some level design. The theme for the game jam was 'It is not real.' 
+                            With this theme I thought of the concept of a platformer where there are platforms
+                            you see that are not real and there are platforms that you can't see that are 
+                            real. The player collects mushrooms in order to see the truth and rocks to 
+                            slingshot at the mushroom enemies."
+                            link="/truth"
+                            type="Featured Project"
+                            github="https://github.com/realbcole/portfolio/tree/main/portfolio/public/projects/truth"
+                        />
                         <Project
                             title="Survive"
                             techStack="Unity, C#"
@@ -174,30 +198,6 @@ const projects = () => {
                             github="https://github.com/realbcole/portfolio/tree/main/portfolio/public/projects/survive"
                         />
 
-                                                <FeaturedProject
-                            title="Truth"
-                            techStack="Unity, C#"
-                            img={truth}
-                            summary="Truth is a game I made along with a team of four for the 2022 Brackey's 
-                            game jam. My contributions to the project include all of the programming, the main
-                             menu, and some level design. The theme for the game jam was 'It is not real.' 
-                             With this theme I thought of the concept of a platformer where there are platforms
-                              you see that are not real and there are platforms that you can't see that are 
-                              real. The player collects mushrooms in order to see the truth and rocks to 
-                              slingshot at the mushroom enemies."
-                            link="/truth"
-                            type="Featured Project"
-                            github="https://github.com/realbcole/portfolio/tree/main/portfolio/public/projects/truth"
-                        />
-
-                        <Project
-                            title="NYS Park Buddy"
-                            techStack="HTML, CSS, JavaScript, AJAX"
-                            img={nysParks}
-                            link="/nysparkbuddy"
-                            type="Project"
-                            github="https://github.com/realbcole/portfolio/tree/main/portfolio/public/projects/nysparkbuddy"
-                        />
                         <Project
                             title="Old Portfolio"
                             techStack="HTML, CSS"
