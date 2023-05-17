@@ -26,6 +26,11 @@ import mongoose from '../../public/images/skills/mongoose.png'
 import mui from '../../public/images/skills/mui.png'
 import redux from '../../public/images/skills/redux.png'
 import mongoDb from '../../public/images/skills/mongodb.png'
+import vite from '../../public/images/skills/vite.png'
+import vercel from '../../public/images/skills/vercel.png'
+import framerMotion from '../../public/images/skills/framermotion.png'
+import cloudFlare from '../../public/images/skills/cloudflare.png'
+import render from '../../public/images/skills/render.png'
 
 // Skill component
 const Skill = ({ img, name, className = "" }) => {
@@ -59,10 +64,12 @@ const Skills = () => {
                 <Skill img={node} name='NodeJS' />
                 <Skill img={nextDark} name='NextJS' className='hidden dark:flex' />
                 <Skill img={nextLight} name='NextJS' className='dark:hidden' />
+                <Skill img={vite} name='Vite' />
                 <Skill img={express} name='ExpressJS' />
                 <Skill img={redux} name='Redux Toolkit' />
                 <Skill img={mongoose} name='Mongoose' />
                 <Skill img={mongoDb} name='MongoDB' />
+                <Skill img={framerMotion} name='React Framer Motion' />
                 <Skill img={mui} name='Material UI' />
                 <Skill img={tailwind} name='Tailwind CSS' />
                 <Skill img={flutter} name='Flutter' />
@@ -71,6 +78,9 @@ const Skills = () => {
                 <Skill img={visualstudio} name='Visual Studio' />
                 <Skill img={vscode} name='VSCode' />
                 <Skill img={git} name='Git' />
+                <Skill img={vercel} name='Vercel' />
+                <Skill img={cloudFlare} name='Cloudflare' />
+                <Skill img={render} name='Render.com' />
                 <Skill img={photoshop} name='Photoshop' />
             </div>
         </>

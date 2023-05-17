@@ -13,6 +13,7 @@ import truth from '../../public/images/projects/truth.png'
 import oldPortfolio from '../../public/images/projects/oldportfolio.png'
 import synthax from '../../public/images/projects/synt-hax.png'
 import adminDashboard from '../../public/images/projects/dashboard.png'
+import evoGym from '../../public/images/projects/evogym.png'
 import TransitionEffect from '@/components/TransitionEffect'
 
 // FeaturedProject component (Shows more details about a project)
@@ -125,7 +126,7 @@ const projects = () => {
 
                         <Project
                             title="Fullstack Admin Dashboard"
-                            techStack="MERN Stack, React, Material UI, Nivo Charts, Redux Toolkit, NodeJS, ExpressJS, Mongoose, MongoDB"
+                            techStack="MERN Stack, React, Material UI, Nivo Charts, Redux Toolkit, NodeJS, ExpressJS, Mongoose, MongoDB, Render.com"
                             img={adminDashboard}
                             link="https://admin-frontend-mqei.onrender.com/dashboard"
                             type="Project"
@@ -133,28 +134,26 @@ const projects = () => {
                         />
 
                         <Project
-                            title="Audio Visualizer"
-                            techStack="HTML, CSS, JavaScript, AJAX, Web Audio, Canvas"
-                            img={audioVisualizer}
-                            link="/audiovisualizer"
+                            title="EvoGym"
+                            techStack="React, TypeScript, Vite, TailwindCSS, Framer Motion, Cloudflare"
+                            img={evoGym}
+                            link="https://d8851c7d.gym-app-5je.pages.dev/"
                             type="Project"
-                            github="https://github.com/realbcole/portfolio/tree/main/portfolio/public/projects/audiovisualizer"
+                            github="https://github.com/realbcole/gym-app"
                         />
 
                         <FeaturedProject
-                            title="Truth"
-                            techStack="Unity, C#"
-                            img={truth}
-                            summary="Truth is a game I made along with a team of four for the 2022 Brackey's 
-                            game jam. My contributions to the project include all of the programming, the main
-                             menu, and some level design. The theme for the game jam was 'It is not real.' 
-                             With this theme I thought of the concept of a platformer where there are platforms
-                              you see that are not real and there are platforms that you can't see that are 
-                              real. The player collects mushrooms in order to see the truth and rocks to 
-                              slingshot at the mushroom enemies."
-                            link="/truth"
+                            title="Audio Visualizer"
+                            techStack="HTML, CSS, JavaScript, AJAX, Web Audio, Canvas"
+                            img={audioVisualizer}
+                            summary="Audio Visualizer was originally a homework assignment for my class Rich 
+                            Media and Web Applications I. It has been greatly improved upon since. The audio 
+                            visualizer utilizes the Web Audio API as well as the Canvas API to retrieve audio 
+                            data from an MP3 file and draw meaningful visualizations of it on the screen. It 
+                            is also very aesthetically pleasing and I'm extremely happy with how it turned out."
+                            link="/audiovisualizer"
                             type="Featured Project"
-                            github="https://github.com/realbcole/portfolio/tree/main/portfolio/public/projects/truth"
+                            github="https://github.com/realbcole/portfolio/tree/main/portfolio/public/projects/audiovisualizer"
                         />
                         <Project
                             title="Meal Finder"
@@ -173,6 +172,22 @@ const projects = () => {
                             link="/survive"
                             type="Project"
                             github="https://github.com/realbcole/portfolio/tree/main/portfolio/public/projects/survive"
+                        />
+
+                                                <FeaturedProject
+                            title="Truth"
+                            techStack="Unity, C#"
+                            img={truth}
+                            summary="Truth is a game I made along with a team of four for the 2022 Brackey's 
+                            game jam. My contributions to the project include all of the programming, the main
+                             menu, and some level design. The theme for the game jam was 'It is not real.' 
+                             With this theme I thought of the concept of a platformer where there are platforms
+                              you see that are not real and there are platforms that you can't see that are 
+                              real. The player collects mushrooms in order to see the truth and rocks to 
+                              slingshot at the mushroom enemies."
+                            link="/truth"
+                            type="Featured Project"
+                            github="https://github.com/realbcole/portfolio/tree/main/portfolio/public/projects/truth"
                         />
 
                         <Project
