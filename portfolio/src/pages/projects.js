@@ -66,7 +66,7 @@ const Project = ({ type, title, techStack, img, link, github }) => {
             rounded-br-3xl dark:bg-light md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem]' />
 
                 <Link href={link} target='_blank' className='w-full cursor-pointer overflow-hidden rounded-lg'>
-                    <Image src={img} alt={title} className="w-full h-auto" />
+                    <Image src={img} alt={title} className="w-full h-auto max-h-[500px]" />
                 </Link>
 
                 <div className='w-full flex flex-col items-start justify-between mt-4'>
