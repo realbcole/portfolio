@@ -14,6 +14,7 @@ import oldPortfolio from '../../public/images/projects/oldportfolio.png'
 import synthax from '../../public/images/projects/synt-hax.png'
 import adminDashboard from '../../public/images/projects/dashboard.png'
 import evoGym from '../../public/images/projects/evogym.png'
+import job from '../../public/images/projects/job.png'
 import TransitionEffect from '@/components/TransitionEffect'
 
 // FeaturedProject component (Shows more details about a project)
@@ -155,6 +156,17 @@ const projects = () => {
                             type="Featured Project"
                             github="https://github.com/realbcole/portfolio/tree/main/portfolio/public/projects/audiovisualizer"
                         />
+
+                        
+                            <Project
+                            title="React Native Job App"
+                            techStack="React Native, Expo, JSearch"
+                            img={job}
+                            link="https://github.com/realbcole/react_native_jobs/"
+                            type="Project"
+                            github="https://github.com/realbcole/react_native_jobs/"
+                        />
+
                         <Project
                             title="Meal Finder"
                             techStack="HTML, CSS, JavaScript, AJAX, TheMealDB"
@@ -163,16 +175,6 @@ const projects = () => {
                             type="Project"
                             github="https://github.com/realbcole/portfolio/tree/main/portfolio/public/projects/mealfinder"
                         />
-
-                        <Project
-                            title="NYS Park Buddy"
-                            techStack="HTML, CSS, JavaScript, AJAX"
-                            img={nysParks}
-                            link="/nysparkbuddy"
-                            type="Project"
-                            github="https://github.com/realbcole/portfolio/tree/main/portfolio/public/projects/nysparkbuddy"
-                        />
-
 
                         <FeaturedProject
                             title="Truth"
@@ -189,6 +191,16 @@ const projects = () => {
                             type="Featured Project"
                             github="https://github.com/realbcole/portfolio/tree/main/portfolio/public/projects/truth"
                         />
+                        
+                        <Project
+                            title="NYS Park Buddy"
+                            techStack="HTML, CSS, JavaScript, AJAX"
+                            img={nysParks}
+                            link="/nysparkbuddy"
+                            type="Project"
+                            github="https://github.com/realbcole/portfolio/tree/main/portfolio/public/projects/nysparkbuddy"
+                        />
+
                         <Project
                             title="Survive"
                             techStack="Unity, C#"

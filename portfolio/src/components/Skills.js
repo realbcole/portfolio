@@ -31,6 +31,7 @@ import vercel from '../../public/images/skills/vercel.png'
 import framerMotion from '../../public/images/skills/framermotion.png'
 import cloudFlare from '../../public/images/skills/cloudflare.png'
 import render from '../../public/images/skills/render.png'
+import expo from '../../public/images/skills/expo.png'
 
 // Skill component
 const Skill = ({ img, name, className = "" }) => {
@@ -61,10 +62,12 @@ const Skills = () => {
                 <Skill img={python} name='Python' />
                 <Skill img={csharp} name='C#' />
                 <Skill img={react} name='ReactJS' />
+                <Skill img={react} name='React Native' />
                 <Skill img={node} name='NodeJS' />
                 <Skill img={nextDark} name='NextJS' className='hidden dark:flex' />
                 <Skill img={nextLight} name='NextJS' className='dark:hidden' />
                 <Skill img={vite} name='Vite' />
+                <Skill img={expo} name='Expo' />
                 <Skill img={express} name='ExpressJS' />
                 <Skill img={redux} name='Redux Toolkit' />
                 <Skill img={mongoose} name='Mongoose' />
