@@ -141,7 +141,6 @@ const Project = ({ type, title, techStack, img, link, github }) => {
               Visit
             </Link>
             <Link href={github} target="_blank" className="w-8 md:w-6">
-              {' '}
               <GithubIcon />{' '}
             </Link>
           </div>
@@ -226,21 +225,21 @@ const projects = () => {
             />
 
             <Project
-              title="React Native Job App"
-              techStack="React Native, Expo, JSearch"
-              img={job}
-              link="https://github.com/realbcole/react_native_jobs/"
-              type="Project"
-              github="https://github.com/realbcole/react_native_jobs/"
-            />
-
-            <Project
               title="Meal Finder"
               techStack="HTML, CSS, JavaScript, AJAX, TheMealDB"
               img={mealFinder}
               link="/mealfinder"
               type="Project"
               github="https://github.com/realbcole/portfolio/tree/main/portfolio/public/projects/mealfinder"
+            />
+
+            <Project
+              title="NYS Park Buddy"
+              techStack="HTML, CSS, JavaScript, AJAX"
+              img={nysParks}
+              link="/nysparkbuddy"
+              type="Project"
+              github="https://github.com/realbcole/portfolio/tree/main/portfolio/public/projects/nysparkbuddy"
             />
 
             <FeaturedProject
@@ -257,15 +256,6 @@ const projects = () => {
               link="/truth"
               type="Featured Project"
               github="https://github.com/realbcole/portfolio/tree/main/portfolio/public/projects/truth"
-            />
-
-            <Project
-              title="NYS Park Buddy"
-              techStack="HTML, CSS, JavaScript, AJAX"
-              img={nysParks}
-              link="/nysparkbuddy"
-              type="Project"
-              github="https://github.com/realbcole/portfolio/tree/main/portfolio/public/projects/nysparkbuddy"
             />
 
             <Project

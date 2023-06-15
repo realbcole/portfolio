@@ -28,10 +28,8 @@ import mongoose from '../../public/images/skills/mongoose.png';
 import mui from '../../public/images/skills/mui.png';
 import stripe from '../../public/images/skills/stripe.png';
 import mongoDb from '../../public/images/skills/mongodb.png';
-import vite from '../../public/images/skills/vite.png';
 import vercel from '../../public/images/skills/vercel.png';
 import framerMotion from '../../public/images/skills/framermotion.png';
-import expo from '../../public/images/skills/expo.png';
 
 // Skill component
 const Skill = ({ img, name, className = '' }) => {
@@ -67,13 +65,10 @@ const Skills = () => {
         <Skill img={python} name="Python" />
         <Skill img={csharp} name="C#" />
         <Skill img={react} name="ReactJS" />
-        <Skill img={react} name="React Native" />
         <Skill img={node} name="NodeJS" />
         <Skill img={nextDark} name="NextJS" className="hidden dark:flex" />
         <Skill img={nextLight} name="NextJS" className="dark:hidden" />
         <Skill img={nextAuth} name="NextAuth" />
-        <Skill img={vite} name="Vite" />
-        <Skill img={expo} name="Expo" />
         <Skill img={axios} name="Axios" />
         <Skill img={express} name="ExpressJS" />
         <Skill img={stripe} name="Stripe API" />
