@@ -1,228 +1,295 @@
-import React from 'react'
-import Head from 'next/head'
-import AnimatedText from '@/components/AnimatedText'
-import Layout from '@/components/Layout'
-import Link from 'next/link'
-import Image from 'next/image'
-import { GithubIcon } from '@/components/Icons'
-import audioVisualizer from '../../public/images/projects/audiovisualizer.png'
-import mealFinder from '../../public/images/projects/mealfinder.png'
-import nysParks from '../../public/images/projects/nystateparks.png'
-import survive from '../../public/images/projects/survive.png'
-import truth from '../../public/images/projects/truth.png'
-import oldPortfolio from '../../public/images/projects/oldportfolio.png'
-import synthax from '../../public/images/projects/synt-hax.png'
-import adminDashboard from '../../public/images/projects/dashboard.png'
-import evoGym from '../../public/images/projects/evogym.png'
-import job from '../../public/images/projects/job.png'
-import TransitionEffect from '@/components/TransitionEffect'
+import React from 'react';
+import Head from 'next/head';
+import AnimatedText from '@/components/AnimatedText';
+import Layout from '@/components/Layout';
+import Link from 'next/link';
+import Image from 'next/image';
+import { GithubIcon } from '@/components/Icons';
+import audioVisualizer from '../../public/images/projects/audiovisualizer.png';
+import mealFinder from '../../public/images/projects/mealfinder.png';
+import nysParks from '../../public/images/projects/nystateparks.png';
+import survive from '../../public/images/projects/survive.png';
+import truth from '../../public/images/projects/truth.png';
+import oldPortfolio from '../../public/images/projects/oldportfolio.png';
+import synthax from '../../public/images/projects/synt-hax.png';
+import ecommerceFront from '../../public/images/projects/ecommercefront.png';
+import ecommerceAdmin from '../../public/images/projects/ecommerceadmin.png';
+import job from '../../public/images/projects/job.png';
+import TransitionEffect from '@/components/TransitionEffect';
 
 // FeaturedProject component (Shows more details about a project)
-const FeaturedProject = ({ type, title, techStack, summary, img, link, github }) => {
-    return (
-        <div className='col-span-12'>
-            <article className='w-full flex items-center justify-between rounded-3xl
+const FeaturedProject = ({
+  type,
+  title,
+  techStack,
+  summary,
+  img,
+  link,
+  github,
+}) => {
+  return (
+    <div className="col-span-12">
+      <article
+        className="w-full flex items-center justify-between rounded-3xl
                 border border-solid border-dark bg-light shadow-2xl p-12 relative rounded-br-2xl dark:bg-dark
-                dark:border-light lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4'>
-                <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark
-                     rounded-br-3xl dark:bg-light xs:-right-2 sm:h-[102%] xs:w-full xs:rounded-[1.5rem]' />
+                dark:border-light lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4"
+      >
+        <div
+          className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark
+                     rounded-br-3xl dark:bg-light xs:-right-2 sm:h-[102%] xs:w-full xs:rounded-[1.5rem]"
+        />
 
-                <Link href={link} target='_blank'
-                    className='w-1/2 cursor-pointer overflow-hidden rounded-lg lg:w-full'>
-                    <Image src={img} alt={title} className="w-full h-auto" priority
-                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw" />
-                </Link>
+        <Link
+          href={link}
+          target="_blank"
+          className="w-1/2 cursor-pointer overflow-hidden rounded-lg lg:w-full"
+        >
+          <Image
+            src={img}
+            alt={title}
+            className="w-full h-auto"
+            priority
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+          />
+        </Link>
 
-                <div className='w-1/2 flex flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6'>
-                    <span className='text-primary font-medium text-xl dark:text-primaryDark xs:text-base'>{type}</span>
-                    <Link href={link} className='hover:underline underline-offset-2'>
-                        <h2 className='my-2 w-full text-left text-4xl font-bold dark:text-light lg:text-3xl'>{title}</h2>
-                    </Link>
-                    <p className='font-semibold text-dark/90 dark:text-light/90 sm:text-sm'>
-                        <span className='font-bold text-dark dark:text-light sm:text-sm'>Tech Stack: </span>
-                        {techStack}</p>
-                    <p className='my-2 font-medium text-dark dark:text-light sm:text-sm'>{summary}</p>
-                    <div className='mt-2 flex items-center'>
-                        <Link href={github} target='_blank' className='w-10'> <GithubIcon /> </Link>
-                        <Link href={link} target='_blank'
-                            className='ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold
-                        dark:bg-light dark:text-dark sm:px-4 sm:text-base'
-                        >Visit Project</Link>
-                    </div>
-                </div>
-            </article>
+        <div className="w-1/2 flex flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6">
+          <span className="text-primary font-medium text-xl dark:text-primaryDark xs:text-base">
+            {type}
+          </span>
+          <Link href={link} className="hover:underline underline-offset-2">
+            <h2 className="my-2 w-full text-left text-4xl font-bold dark:text-light lg:text-3xl">
+              {title}
+            </h2>
+          </Link>
+          <p className="font-semibold text-dark/90 dark:text-light/90 sm:text-sm">
+            <span className="font-bold text-dark dark:text-light sm:text-sm">
+              Tech Stack:{' '}
+            </span>
+            {techStack}
+          </p>
+          <p className="my-2 font-medium text-dark dark:text-light sm:text-sm">
+            {summary}
+          </p>
+          <div className="mt-2 flex items-center">
+            <Link href={github} target="_blank" className="w-10">
+              {' '}
+              <GithubIcon />{' '}
+            </Link>
+            <Link
+              href={link}
+              target="_blank"
+              className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold
+                        dark:bg-light dark:text-dark sm:px-4 sm:text-base"
+            >
+              Visit Project
+            </Link>
+          </div>
         </div>
-    )
-}
+      </article>
+    </div>
+  );
+};
 
 // Project component (Shows a project)
 const Project = ({ type, title, techStack, img, link, github }) => {
-    return (
-        <div className='col-span-6 sm:col-span-12'>
-            <article className='w-full flex flex-col items-center justify-center rounded-2xl border
+  return (
+    <div className="col-span-6 sm:col-span-12">
+      <article
+        className="w-full flex flex-col items-center justify-center rounded-2xl border
         border-solid border-dark bg-light p-6 relative dark:bg-dark dark:border-light
-        xs:p-4'>
-                <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark
-            rounded-br-3xl dark:bg-light md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem]' />
+        xs:p-4"
+      >
+        <div
+          className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark
+            rounded-br-3xl dark:bg-light md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem]"
+        />
 
-                <Link href={link} target='_blank' className='w-full cursor-pointer overflow-hidden rounded-lg'>
-                    <Image src={img} alt={title} className="w-full h-auto max" />
-                </Link>
+        <Link
+          href={link}
+          target="_blank"
+          className="w-full cursor-pointer overflow-hidden rounded-lg"
+        >
+          <Image src={img} alt={title} className="w-full h-auto max" />
+        </Link>
 
-                <div className='w-full flex flex-col items-start justify-between mt-4'>
-                    <span className='text-primary font-medium text-xl dark:text-primaryDark lg:text-lg md:text-base'>{type}</span>
-                    <Link href={link} target='_blank' className='hover:underline underline-offset-2'>
-                        <h2 className='my-2 w-full text-left text-3xl font-bold lg:text-2xl'>{title}</h2>
-                    </Link>
-                    <p className='font-semibold text-dark/90 dark:text-light/90 sm:text-sm'>
-                        <span className='font-bold text-dark dark:text-light sm:text-sm'>Tech Stack: </span>
-                        {techStack}</p>
-                    <div className='w-full mt-2 flex items-center justify-between'>
-                        <Link href={link} target='_blank'
-                            className='text-lg font-semibold underline underline-offset-2 md:text-base'
-                        >Visit</Link>
-                        <Link href={github} target='_blank' className='w-8 md:w-6'> <GithubIcon /> </Link>
-
-                    </div>
-                </div>
-            </article>
+        <div className="w-full flex flex-col items-start justify-between mt-4">
+          <span className="text-primary font-medium text-xl dark:text-primaryDark lg:text-lg md:text-base">
+            {type}
+          </span>
+          <Link
+            href={link}
+            target="_blank"
+            className="hover:underline underline-offset-2"
+          >
+            <h2 className="my-2 w-full text-left text-3xl font-bold lg:text-2xl">
+              {title}
+            </h2>
+          </Link>
+          <p className="font-semibold text-dark/90 dark:text-light/90 sm:text-sm">
+            <span className="font-bold text-dark dark:text-light sm:text-sm">
+              Tech Stack:{' '}
+            </span>
+            {techStack}
+          </p>
+          <div className="w-full mt-2 flex items-center justify-between">
+            <Link
+              href={link}
+              target="_blank"
+              className="text-lg font-semibold underline underline-offset-2 md:text-base"
+            >
+              Visit
+            </Link>
+            <Link href={github} target="_blank" className="w-8 md:w-6">
+              {' '}
+              <GithubIcon />{' '}
+            </Link>
+          </div>
         </div>
-    )
-}
+      </article>
+    </div>
+  );
+};
 const projects = () => {
-    return (
-        <>
-            <Head>
-                <title>Brandon Cole | Projects</title>
-                <meta name="description" content="Explore Brandon Cole's portfolio of projects, 
+  return (
+    <>
+      <Head>
+        <title>Brandon Cole | Projects</title>
+        <meta
+          name="description"
+          content="Explore Brandon Cole's portfolio of projects, 
                 including a diverse range of web applications, Unity games, and AI-powered tools. 
-                Discover the tech stack and details behind each project and visit their live demos." />
-                <meta property="og:type" content="website" />
-                <meta property="og:title" content="Brandon Cole | Contact" />
-                <meta property="og:description" content="Explore Brandon Cole's portfolio of projects, 
+                Discover the tech stack and details behind each project and visit their live demos."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Brandon Cole | Contact" />
+        <meta
+          property="og:description"
+          content="Explore Brandon Cole's portfolio of projects, 
                 including a diverse range of web applications, Unity games, and AI-powered tools. 
-                Discover the tech stack and details behind each project and visit their live demos." />
-            </Head>
-            <TransitionEffect />
-            <main className='w-full mb-16 flex flex-col items-center justify-center dark:text-light'>
-                <Layout className='pt-16'>
-                    <AnimatedText text="View My Work!"
-                        className='mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl'
-                    />
-                    {/* Projects List */}
-                    <div className='grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0'>
-                        <FeaturedProject
-                            title="Synt-Hax - AI Syntax Helper"
-                            techStack="React, ExpressJS, NodeJS, OpenAI API, TailwindCSS"
-                            img={synthax}
-                            summary="Synt-Hax is a React-based app that leverages OpenAI's language 
+                Discover the tech stack and details behind each project and visit their live demos."
+        />
+      </Head>
+      <TransitionEffect />
+      <main className="w-full mb-16 flex flex-col items-center justify-center dark:text-light">
+        <Layout className="pt-16">
+          <AnimatedText
+            text="View My Work!"
+            className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
+          />
+          {/* Projects List */}
+          <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
+            <FeaturedProject
+              title="Synt-Hax - AI Syntax Helper"
+              techStack="React, ExpressJS, NodeJS, OpenAI API, TailwindCSS"
+              img={synthax}
+              summary="Synt-Hax is a React-based app that leverages OpenAI's language 
                             processing API to provide developers with syntax suggestions and explanations. 
                             It helps users overcome syntax roadblocks and increase programming productivity. 
                             The app uses ExpressJS and NodeJS for server-side communication and TailwindCSS 
                             for UI styling."
-                            link="https://synt-hax.vercel.app/"
-                            type="Featured Project"
-                            github="https://github.com/realbcole/Synt-hax"
-                        />
+              link="https://synt-hax.vercel.app/"
+              type="Featured Project"
+              github="https://github.com/realbcole/Synt-hax"
+            />
 
-                        <Project
-                            title="Fullstack Admin Dashboard"
-                            techStack="MERN Stack, React, Material UI, Nivo Charts, Redux Toolkit, NodeJS, ExpressJS, Mongoose, MongoDB, Render.com"
-                            img={adminDashboard}
-                            link="https://admin-frontend-mqei.onrender.com/"
-                            type="Project"
-                            github="https://github.com/realbcole/fullstack-admin"
-                        />
+            <Project
+              title="Full Stack Ecommerce Front"
+              techStack="React, NextJS, TypeScript, TailwindCSS, Next-Auth, Stripe, NodeJS, Axios, Mongoose, MongoDB, Vercel"
+              img={ecommerceFront}
+              link="https://ecommerce-front-eosin.vercel.app/"
+              type="Project"
+              github="https://github.com/realbcole/ecommerce-front"
+            />
 
-                        <Project
-                            title="EvoGym"
-                            techStack="React, TypeScript, Vite, TailwindCSS, Framer Motion, Cloudflare"
-                            img={evoGym}
-                            link="https://5f314222.gym-app-5je.pages.dev/"
-                            type="Project"
-                            github="https://github.com/realbcole/gym-app"
-                        />
+            <Project
+              title="Full Stack Ecommerce Admin"
+              techStack="React, NextJS, TypeScript, TailwindCSS, Next-Auth, Stripe, AWS, NodeJS, Axios, Mongoose, MongoDB, Vercel"
+              img={ecommerceAdmin}
+              link="https://github.com/realbcole/ecommerce-admin"
+              type="Project"
+              github="https://github.com/realbcole/ecommerce-admin"
+            />
 
-                        <FeaturedProject
-                            title="Audio Visualizer"
-                            techStack="HTML, CSS, JavaScript, AJAX, Web Audio, Canvas"
-                            img={audioVisualizer}
-                            summary="Audio Visualizer was originally a homework assignment for my class Rich 
+            <FeaturedProject
+              title="Audio Visualizer"
+              techStack="HTML, CSS, JavaScript, AJAX, Web Audio, Canvas"
+              img={audioVisualizer}
+              summary="Audio Visualizer was originally a homework assignment for my class Rich 
                             Media and Web Applications I. It has been greatly improved upon since. The audio 
                             visualizer utilizes the Web Audio API as well as the Canvas API to retrieve audio 
                             data from an MP3 file and draw meaningful visualizations of it on the screen. It 
                             is also very aesthetically pleasing and I'm extremely happy with how it turned out."
-                            link="/audiovisualizer"
-                            type="Featured Project"
-                            github="https://github.com/realbcole/portfolio/tree/main/portfolio/public/projects/audiovisualizer"
-                        />
+              link="/audiovisualizer"
+              type="Featured Project"
+              github="https://github.com/realbcole/portfolio/tree/main/portfolio/public/projects/audiovisualizer"
+            />
 
-                        
-                            <Project
-                            title="React Native Job App"
-                            techStack="React Native, Expo, JSearch"
-                            img={job}
-                            link="https://github.com/realbcole/react_native_jobs/"
-                            type="Project"
-                            github="https://github.com/realbcole/react_native_jobs/"
-                        />
+            <Project
+              title="React Native Job App"
+              techStack="React Native, Expo, JSearch"
+              img={job}
+              link="https://github.com/realbcole/react_native_jobs/"
+              type="Project"
+              github="https://github.com/realbcole/react_native_jobs/"
+            />
 
-                        <Project
-                            title="Meal Finder"
-                            techStack="HTML, CSS, JavaScript, AJAX, TheMealDB"
-                            img={mealFinder}
-                            link="/mealfinder"
-                            type="Project"
-                            github="https://github.com/realbcole/portfolio/tree/main/portfolio/public/projects/mealfinder"
-                        />
+            <Project
+              title="Meal Finder"
+              techStack="HTML, CSS, JavaScript, AJAX, TheMealDB"
+              img={mealFinder}
+              link="/mealfinder"
+              type="Project"
+              github="https://github.com/realbcole/portfolio/tree/main/portfolio/public/projects/mealfinder"
+            />
 
-                        <FeaturedProject
-                            title="Truth"
-                            techStack="Unity, C#"
-                            img={truth}
-                            summary="Truth is a game I made along with a team of four for the 2022 Brackey's 
+            <FeaturedProject
+              title="Truth"
+              techStack="Unity, C#"
+              img={truth}
+              summary="Truth is a game I made along with a team of four for the 2022 Brackey's 
                             game jam. My contributions to the project include all of the programming, the main
                             menu, and some level design. The theme for the game jam was 'It is not real.' 
                             With this theme I thought of the concept of a platformer where there are platforms
                             you see that are not real and there are platforms that you can't see that are 
                             real. The player collects mushrooms in order to see the truth and rocks to 
                             slingshot at the mushroom enemies."
-                            link="/truth"
-                            type="Featured Project"
-                            github="https://github.com/realbcole/portfolio/tree/main/portfolio/public/projects/truth"
-                        />
-                        
-                        <Project
-                            title="NYS Park Buddy"
-                            techStack="HTML, CSS, JavaScript, AJAX"
-                            img={nysParks}
-                            link="/nysparkbuddy"
-                            type="Project"
-                            github="https://github.com/realbcole/portfolio/tree/main/portfolio/public/projects/nysparkbuddy"
-                        />
+              link="/truth"
+              type="Featured Project"
+              github="https://github.com/realbcole/portfolio/tree/main/portfolio/public/projects/truth"
+            />
 
-                        <Project
-                            title="Survive"
-                            techStack="Unity, C#"
-                            img={survive}
-                            link="/survive"
-                            type="Project"
-                            github="https://github.com/realbcole/portfolio/tree/main/portfolio/public/projects/survive"
-                        />
+            <Project
+              title="NYS Park Buddy"
+              techStack="HTML, CSS, JavaScript, AJAX"
+              img={nysParks}
+              link="/nysparkbuddy"
+              type="Project"
+              github="https://github.com/realbcole/portfolio/tree/main/portfolio/public/projects/nysparkbuddy"
+            />
 
-                        <Project
-                            title="Old Portfolio"
-                            techStack="HTML, CSS"
-                            img={oldPortfolio}
-                            link="/oldportfolio"
-                            type="Project"
-                            github="https://github.com/realbcole/portfolio/tree/main/portfolio/public/projects/oldportfolio"
-                        />
-                    </div>
-                </Layout>
-            </main>
-        </>
-    )
-}
+            <Project
+              title="Survive"
+              techStack="Unity, C#"
+              img={survive}
+              link="/survive"
+              type="Project"
+              github="https://github.com/realbcole/portfolio/tree/main/portfolio/public/projects/survive"
+            />
 
-export default projects
+            <Project
+              title="Old Portfolio"
+              techStack="HTML, CSS"
+              img={oldPortfolio}
+              link="/oldportfolio"
+              type="Project"
+              github="https://github.com/realbcole/portfolio/tree/main/portfolio/public/projects/oldportfolio"
+            />
+          </div>
+        </Layout>
+      </main>
+    </>
+  );
+};
+
+export default projects;
