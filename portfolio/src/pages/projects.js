@@ -14,7 +14,6 @@ import oldPortfolio from '../../public/images/projects/oldportfolio.png';
 import synthax from '../../public/images/projects/synt-hax.png';
 import ecommerceFront from '../../public/images/projects/ecommercefront.png';
 import ecommerceAdmin from '../../public/images/projects/ecommerceadmin.png';
-import job from '../../public/images/projects/job.png';
 import TransitionEffect from '@/components/TransitionEffect';
 
 // FeaturedProject component (Shows more details about a project)
