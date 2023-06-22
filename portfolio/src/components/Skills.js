@@ -40,7 +40,7 @@ const Skill = ({ img, name, className = '' }) => {
       whileHover={{ scale: 1.05 }}
     >
       <Image src={img} alt={name} className="w-full" />
-      <p className="font-bold text-primary/75 dark:text-primaryDark/75 text-center">
+      <p className="font-bold text-primary/75 dark:text-primaryDark/75 text-center text-sm md:text-md">
         {name}
       </p>
     </motion.div>
