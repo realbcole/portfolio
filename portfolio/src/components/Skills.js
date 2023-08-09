@@ -30,6 +30,8 @@ import stripe from '../../public/images/skills/stripe.png';
 import mongoDb from '../../public/images/skills/mongodb.png';
 import vercel from '../../public/images/skills/vercel.png';
 import framerMotion from '../../public/images/skills/framermotion.png';
+import angular from '../../public/images/skills/angular.png';
+import mysql from '../../public/images/skills/mysql.png';
 
 // Skill component
 const Skill = ({ img, name, className = '' }) => {
@@ -65,12 +67,14 @@ const Skills = () => {
         <Skill img={python} name="Python" />
         <Skill img={csharp} name="C#" />
         <Skill img={react} name="ReactJS" />
+        <Skill img={angular} name="Angular" />
         <Skill img={node} name="NodeJS" />
         <Skill img={nextDark} name="NextJS" className="hidden dark:flex" />
         <Skill img={nextLight} name="NextJS" className="dark:hidden" />
         <Skill img={nextAuth} name="NextAuth" />
         <Skill img={axios} name="Axios" />
         <Skill img={express} name="ExpressJS" />
+        <Skill img={mysql} name="MySQL" />
         <Skill img={stripe} name="Stripe API" />
         <Skill img={mongoose} name="Mongoose" />
         <Skill img={mongoDb} name="MongoDB" />
