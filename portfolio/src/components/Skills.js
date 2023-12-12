@@ -11,8 +11,6 @@ import nextLight from '../../public/images/skills/nextLight.png';
 import nextDark from '../../public/images/skills/nextDark.png';
 import nextAuth from '../../public/images/skills/nextauth.png';
 import tailwind from '../../public/images/skills/tailwind.png';
-import dart from '../../public/images/skills/dart.png';
-import flutter from '../../public/images/skills/flutter.png';
 import cpp from '../../public/images/skills/cpp.png';
 import python from '../../public/images/skills/python.png';
 import csharp from '../../public/images/skills/csharp.png';
@@ -21,17 +19,22 @@ import unityDark from '../../public/images/skills/unityDark.png';
 import visualstudio from '../../public/images/skills/visualstudio.png';
 import vscode from '../../public/images/skills/vscode.png';
 import git from '../../public/images/skills/git.png';
-import photoshop from '../../public/images/skills/photoshop.png';
 import express from '../../public/images/skills/expressjs.png';
 import axios from '../../public/images/skills/axios.png';
 import mongoose from '../../public/images/skills/mongoose.png';
-import mui from '../../public/images/skills/mui.png';
-import stripe from '../../public/images/skills/stripe.png';
 import mongoDb from '../../public/images/skills/mongodb.png';
 import vercel from '../../public/images/skills/vercel.png';
-import framerMotion from '../../public/images/skills/framermotion.png';
 import angular from '../../public/images/skills/angular.png';
 import mysql from '../../public/images/skills/mysql.png';
+import postgresql from '../../public/images/skills/postgresql.png';
+import prisma from '../../public/images/skills/prisma.png';
+import aws from '../../public/images/skills/aws.png';
+import docker from '../../public/images/skills/docker.png';
+import heroku from '../../public/images/skills/heroku.png';
+import jwt from '../../public/images/skills/jwt.png';
+import jira from '../../public/images/skills/jira.png';
+import rxjs from '../../public/images/skills/rxjs.png';
+import socket from '../../public/images/skills/socket.png'
 
 // Skill component
 const Skill = ({ img, name, className = '' }) => {
@@ -62,33 +65,36 @@ const Skills = () => {
         <Skill img={css} name="CSS" />
         <Skill img={js} name="JavaScript" />
         <Skill img={ts} name="TypeScript" />
-        <Skill img={dart} name="Dart" />
         <Skill img={cpp} name="C++" />
         <Skill img={python} name="Python" />
         <Skill img={csharp} name="C#" />
-        <Skill img={react} name="ReactJS" />
+        <Skill img={react} name="React" />
         <Skill img={angular} name="Angular" />
-        <Skill img={node} name="NodeJS" />
+        <Skill img={node} name="Node" />
         <Skill img={nextDark} name="NextJS" className="hidden dark:flex" />
         <Skill img={nextLight} name="NextJS" className="dark:hidden" />
         <Skill img={nextAuth} name="NextAuth" />
+        <Skill img={jwt} name="JSON Web Token" />
+        <Skill img={rxjs} name="RXJS" />
         <Skill img={axios} name="Axios" />
-        <Skill img={express} name="ExpressJS" />
+        <Skill img={express} name="Express" />
+        <Skill img={prisma} name="Prisma ORM" />
         <Skill img={mysql} name="MySQL" />
-        <Skill img={stripe} name="Stripe API" />
+        <Skill img={postgresql} name="PostgreSQL" />
         <Skill img={mongoose} name="Mongoose" />
         <Skill img={mongoDb} name="MongoDB" />
-        <Skill img={framerMotion} name="React Framer Motion" />
-        <Skill img={mui} name="Material UI" />
+        <Skill img={socket} name="Socket.io" />
+        <Skill img={aws} name="Amazon Web Services" />
+        <Skill img={docker} name="Docker" />
         <Skill img={tailwind} name="Tailwind CSS" />
-        <Skill img={flutter} name="Flutter" />
+        <Skill img={vercel} name="Vercel" />
+        <Skill img={heroku} name="Heroku" />
         <Skill img={unityDark} name="Unity" className="hidden dark:flex" />
         <Skill img={unityLight} name="Unity" className="dark:hidden" />
         <Skill img={visualstudio} name="Visual Studio" />
         <Skill img={vscode} name="VSCode" />
         <Skill img={git} name="Git" />
-        <Skill img={vercel} name="Vercel" />
-        <Skill img={photoshop} name="Photoshop" />
+        <Skill img={jira} name="JIRA" />
       </div>
     </>
   );

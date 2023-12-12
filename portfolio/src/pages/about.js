@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import Head from 'next/head';
 import AnimatedText from '@/components/AnimatedText';
 import Layout from '@/components/Layout';
-import profilePic from '../../public/images/profile/profile.png';
+import profilePic from '../../public/images/profile/profile.jpg';
 import Image from 'next/image';
 import { useInView, useMotionValue, useSpring } from 'framer-motion';
 import TransitionEffect from '@/components/TransitionEffect';
@@ -131,7 +131,7 @@ const about = () => {
             <div className="col-span-2 flex flex-col items-end justify-between xl:col-span-8 xl:flex-row xl:items-center md:order-3">
               <AnimatedNumbers value={5} text="years coding" />
               <AnimatedNumbers value={10} text="projects completed" />
-              <AnimatedNumbers value={350} text="LinkedIn Connections" />
+              <AnimatedNumbers value={400} text="LinkedIn Connections" />
             </div>
           </div>
           <Skills />

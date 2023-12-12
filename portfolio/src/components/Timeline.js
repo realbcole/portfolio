@@ -101,6 +101,18 @@ const Timeline = () => {
             actively in sprint planning and daily stand-ups, and effectively utilized Jira for project management and task 
             tracking."
           />
+
+          <Event
+            type="Ideal Food Basket Internal PO System"
+            time="October - December 2023"
+            significance="2023 - Project for Ideal Food Basket"
+            place="Freelance"
+            info="Connected by a brother from Sigma Chi, I developed an internal PO System for the 70-location grocery store chain Ideal Food Basket. 
+            This full-stack project involved using Angular for a responsive frontend and Express for robust backend functionality. I implemented a PostgreSQL 
+            database on AWS RDS, managed through Prisma ORM, to handle complex data efficiently. The system's deployment utilized Docker for consistency across 
+            environments and Heroku with CI/CD pipelines for scalable updates. I also integrated multi-level user authentication for enhanced security and 
+            role-specific access, ensuring a seamless and secure user experience for both store and administrative personnel. This project showcases my skills in both web application development and project management."
+          />
         </ul>
       </div>
     </div>

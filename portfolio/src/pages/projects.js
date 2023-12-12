@@ -15,6 +15,8 @@ import synthax from '../../public/images/projects/synt-hax.png';
 import ecommerceFront from '../../public/images/projects/ecommercefront.png';
 import ecommerceAdmin from '../../public/images/projects/ecommerceadmin.png';
 import TransitionEffect from '@/components/TransitionEffect';
+import ideal from '../../public/images/projects/ideal.png';
+import caseCompass from '../../public/images/projects/casecompass.png';
 
 // FeaturedProject component (Shows more details about a project)
 const FeaturedProject = ({
@@ -89,6 +91,62 @@ const FeaturedProject = ({
     </div>
   );
 };
+
+const FeaturedProjectNoLink = ({
+  type,
+  title,
+  techStack,
+  summary,
+  img,
+}) => {
+  return (
+    <div className="col-span-12">
+      <article
+        className="w-full flex items-center justify-between rounded-3xl
+                border border-solid border-dark bg-light shadow-2xl p-12 relative rounded-br-2xl dark:bg-dark
+                dark:border-light lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4"
+      >
+        <div
+          className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark
+                    rounded-br-3xl dark:bg-light xs:-right-2 sm:h-[102%] xs:w-full xs:rounded-[1.5rem]"
+        />
+
+
+        <div
+          className="w-1/2 overflow-hidden rounded-lg lg:w-full"
+        >
+          <Image
+            src={img}
+            alt={title}
+            className="w-full h-auto"
+            priority
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+          />
+        </div>
+
+        <div className="w-1/2 flex flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6">
+          <span className="text-primary font-medium text-xl dark:text-primaryDark xs:text-base">
+            {type}
+          </span>
+          <h2 className="my-2 w-full text-left text-4xl font-bold dark:text-light lg:text-3xl">
+            {title}
+          </h2>
+
+          <p className="font-semibold text-dark/90 dark:text-light/90 sm:text-sm">
+            <span className="font-bold text-dark dark:text-light sm:text-sm">
+              Tech Stack:{' '}
+            </span>
+            {techStack}
+          </p>
+          <p className="my-2 font-medium text-dark dark:text-light sm:text-sm">
+            {summary}
+          </p>
+        </div>
+      </article>
+    </div>
+  );
+};
+
 
 // Project component (Shows a project)
 const Project = ({ type, title, techStack, img, link, github }) => {
@@ -177,18 +235,20 @@ const projects = () => {
           />
           {/* Projects List */}
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
-            <FeaturedProject
-              title="Synt-Hax - AI Syntax Helper"
-              techStack="React, ExpressJS, NodeJS, OpenAI API, TailwindCSS"
-              img={synthax}
-              summary="Synt-Hax is a React-based app that leverages OpenAI's language 
-                            processing API to provide developers with syntax suggestions and explanations. 
-                            It helps users overcome syntax roadblocks and increase programming productivity. 
-                            The app uses ExpressJS and NodeJS for server-side communication and TailwindCSS 
-                            for UI styling."
-              link="https://synt-hax.vercel.app/"
+
+
+            <FeaturedProjectNoLink
+              title="Ideal Food Basket Internal PO System"
+              techStack="Angular, Express, JWT, Prisma, PostgreSQL, AWS, Docker, Heroku"
+              img={ideal}
+              summary="
+              Full-stack web application aimed to modernize purchase ordering  
+              for a 70-location grocery chain. Built using Angular and Express, it features a PostgreSQL database 
+              on AWS RDS, managed via Prisma ORM for efficient data handling. Deployed with Docker on Heroku, it 
+              ensures scalability and consistency, while integrating advanced security and role management for 
+              secure, role-specific access. This is my largest project to date, and I am very proud of this accomplishment.
+              As this is an internal system, I am unable to provide code or screenshots, but feel free to ask me about it!"
               type="Featured Project"
-              github="https://github.com/realbcole/Synt-hax"
             />
 
             <Project
@@ -209,18 +269,50 @@ const projects = () => {
               github="https://github.com/realbcole/ecommerce-admin"
             />
 
-            <FeaturedProject
+            <FeaturedProjectNoLink
+              title="Case Compass"
+              techStack="Angular, Express, MySQL, Sequelize, AWS, Redis, DocxTemplater, RXJS, Socket.io, Beequeue, Doc2Pdf, JWT"
+              img={caseCompass}
+              summary="At Sandbox Union, I made significant contributions to Case Compass, a web-based platform initially for managing 
+              landlord-tenant law cases, now adaptable for various legal practices. It offers case tracking, document management, and automated 
+              communication for lawyers and clients, with AWS hosting for security and scalability. This platform streamlines legal operations, 
+              emphasizing customization and client-focused solutions."
+              type="Featured Project"
+            />
+
+            <Project
+              title="Synt-Hax - AI Syntax Helper"
+              techStack="React, ExpressJS, NodeJS, OpenAI API, TailwindCSS"
+              img={synthax}
+              link="https://synt-hax.vercel.app/"
+              github="https://github.com/realbcole/Synt-hax"
+              type="Project"
+            />
+
+
+            <Project
               title="Audio Visualizer"
               techStack="HTML, CSS, JavaScript, AJAX, Web Audio, Canvas"
               img={audioVisualizer}
-              summary="Audio Visualizer was originally a homework assignment for my class Rich 
-                            Media and Web Applications I. It has been greatly improved upon since. The audio 
-                            visualizer utilizes the Web Audio API as well as the Canvas API to retrieve audio 
-                            data from an MP3 file and draw meaningful visualizations of it on the screen. It 
-                            is also very aesthetically pleasing and I'm extremely happy with how it turned out."
               link="/audiovisualizer"
-              type="Featured Project"
+              type="Project"
               github="https://github.com/realbcole/portfolio/tree/main/portfolio/public/projects/audiovisualizer"
+            />
+
+            <FeaturedProject
+              title="Truth"
+              techStack="Unity, C#"
+              img={truth}
+              summary="Truth is a game I made along with a team of four for the 2022 Brackey's 
+                            game jam. My contributions to the project include all of the programming, the main
+                            menu, and some level design. The theme for the game jam was 'It is not real.' 
+                            With this theme I thought of the concept of a platformer where there are platforms
+                            you see that are not real and there are platforms that you can't see that are 
+                            real. The player collects mushrooms in order to see the truth and rocks to 
+                            slingshot at the mushroom enemies."
+              link="/truth"
+              type="Featured Project"
+              github="https://github.com/realbcole/portfolio/tree/main/portfolio/public/projects/truth"
             />
 
             <Project
@@ -239,22 +331,6 @@ const projects = () => {
               link="/nysparkbuddy"
               type="Project"
               github="https://github.com/realbcole/portfolio/tree/main/portfolio/public/projects/nysparkbuddy"
-            />
-
-            <FeaturedProject
-              title="Truth"
-              techStack="Unity, C#"
-              img={truth}
-              summary="Truth is a game I made along with a team of four for the 2022 Brackey's 
-                            game jam. My contributions to the project include all of the programming, the main
-                            menu, and some level design. The theme for the game jam was 'It is not real.' 
-                            With this theme I thought of the concept of a platformer where there are platforms
-                            you see that are not real and there are platforms that you can't see that are 
-                            real. The player collects mushrooms in order to see the truth and rocks to 
-                            slingshot at the mushroom enemies."
-              link="/truth"
-              type="Featured Project"
-              github="https://github.com/realbcole/portfolio/tree/main/portfolio/public/projects/truth"
             />
 
             <Project

@@ -1,8 +1,7 @@
 import Head from 'next/head'
 import Layout from '@/components/Layout'
 import Image from 'next/image'
-import mainImageLight from '../../public/images/profile/lightcirc.png'
-import mainImageDark from '../../public/images/profile/darkcirc.png'
+import mainImage from '../../public/images/profile/snowbird.png'
 import AnimatedText from '@/components/AnimatedText'
 import Link from 'next/link'
 import { LinkArrow } from '@/components/Icons'
@@ -33,9 +32,7 @@ export default function Home() {
           <div className='flex items-center justify-between w-full lg:flex-col'>
             {/* Main image */}
             <div className='w-1/2 lg:w-3/4 md:w-full pr-10 lg:pr-0 pb-10'>
-              <Image src={mainImageLight} alt="BCOLE" className='w-full h-auto lg:hidden md:inline-block md:w-full dark:hidden' priority
-                sizes="(max-width: 768px) 50vw, (max-width: 1200px) 50vw, 50vw" />
-              <Image src={mainImageDark} alt="BCOLE" className='w-full h-auto lg:hidden md:dark:inline-block md:w-full hidden dark:inline-block' priority
+              <Image src={mainImage} alt="BCOLE" className='w-full h-auto lg:hidden md:inline-block md:w-full' priority
                 sizes="(max-width: 768px) 50vw, (max-width: 1200px) 50vw, 50vw" />
             </div>
             {/* Text */}

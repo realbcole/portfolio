@@ -37,7 +37,6 @@
 
 ## Resources Used in This Project <a name = "resources"></a>
 
-- Images on the home page created using https://www.midjourney.com/
 - Fonts from https://fonts.google.com/ <br />
 - Icons from https://iconify.design/ <br />
 
