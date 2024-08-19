@@ -7,12 +7,18 @@ const Event = ({ type, time, place, info, significance }) => {
   // Ref for the LiIcon element
   const ref = useRef(null);
 
+  // ScrollYProgress for the LiIcon element
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ['start end', 'end start'],
+  });
+
   return (
     <li
       ref={ref}
       className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between md:w-[80%]"
     >
-      <LiIcon reference={ref} />
+      <LiIcon reference={ref} scrollYProgress={scrollYProgress} />
       {/* Animation spring when appears on screen */}
       <motion.div
         initial={{ y: 50 }}
@@ -45,7 +51,7 @@ const Timeline = () => {
   // ScrollYProgress for the div element (used to animate the line)
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ['start end', 'center start'],
+    offset: ['start end', 'end start'],
   });
 
   return (
@@ -87,6 +93,7 @@ const Timeline = () => {
             info="Initiated into the Eta Chapter of Gamma Sigma Alpha at RIT. GSA is a National Greek
                         Academic Honor Society that recognizes the academic accomplishments of fraternity and sorority
                         members."
+
           />
 
           <Event
@@ -100,6 +107,7 @@ const Timeline = () => {
             version control with Git and GitFlow, and employed CI/CD pipelines for efficient project deliveries. Engaged 
             actively in sprint planning and daily stand-ups, and effectively utilized Jira for project management and task 
             tracking."
+
           />
 
           <Event

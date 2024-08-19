@@ -2,15 +2,10 @@ import React from 'react'
 import { motion, useScroll, useTransform } from 'framer-motion'
 
 // LiIcon component
-const LiIcon = ({ ref: reference }) => {
-    // Scroll animation
-    const { scrollYProgress } = useScroll({
-        target: reference,
-        offset: ["80% 20%", "40% 50%"]
-    })
-
+const LiIcon = ({ ref: reference, scrollYProgress }) => {
     // Reversing the animation
-    const pathLength = useTransform(scrollYProgress, [0, 1], [1, 0]);
+
+    const pathLength = useTransform(scrollYProgress, [0.1, 0.9], [0, 2.5]);
 
     return (
         <figure className='absolute left-0 stroke-dark dark:stroke-light'>
