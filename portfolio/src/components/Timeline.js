@@ -103,15 +103,19 @@ const Timeline = () => {
           />
 
           <Event
-            type="Ideal Food Basket Internal PO System"
+            type="Ideal Food Basket Custom Internal Ordering System"
             time="October - December 2023"
             significance="2023 - Project for Ideal Food Basket"
             place="Freelance"
-            info="Connected by a brother from Sigma Chi, I developed an internal PO System for the 70-location grocery store chain Ideal Food Basket. 
-            This full-stack project involved using Angular for a responsive frontend and Express for robust backend functionality. I implemented a PostgreSQL 
-            database on AWS RDS, managed through Prisma ORM, to handle complex data efficiently. The system's deployment utilized Docker for consistency across 
-            environments and Heroku with CI/CD pipelines for scalable updates. I also integrated multi-level user authentication for enhanced security and 
-            role-specific access, ensuring a seamless and secure user experience for both store and administrative personnel. This project showcases my skills in both web application development and project management."
+            info="Collaborated with Justin Ferreira to develop a custom internal ordering system for Ideal Food Basket, a 70-location grocery store chain. This full-stack project leveraged Angular for a responsive frontend and Express for robust backend functionality. We implemented a PostgreSQL database on AWS RDS, managed through Prisma ORM, to efficiently handle complex data. The system's deployment utilized Docker for consistency and Heroku with CI/CD pipelines for scalable updates. We integrated multi-level user authentication for enhanced security and role-specific access, ensuring a seamless and secure user experience for both store and administrative personnel. This project showcases my skills in web application development and project management."
+          />
+
+          <Event
+            type="Ideal Software LLC"
+            time="May 2024 - Present"
+            significance="2024 - Co-founded Ideal Software LLC"
+            place="Ideal Software LLC"
+            info="Co-founded Ideal Software LLC with Justin Ferreira in May 2024. Through our collaborative work on the Ideal Food Basket project, we recognized the potential to leverage our full-stack development expertise to create custom, professional-quality applications for clients in various industries. Ideal Software LLC was founded on this vision to deliver innovative software solutions that address specific business needs and drive growth."
           />
         </ul>
       </div>

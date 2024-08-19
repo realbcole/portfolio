@@ -131,7 +131,7 @@ const about = () => {
             <div className="col-span-2 flex flex-col items-end justify-between xl:col-span-8 xl:flex-row xl:items-center md:order-3">
               <AnimatedNumbers value={5} text="years coding" />
               <AnimatedNumbers value={10} text="projects completed" />
-              <AnimatedNumbers value={400} text="LinkedIn Connections" />
+              <AnimatedNumbers value={450} text="LinkedIn Connections" />
             </div>
           </div>
           <Skills />

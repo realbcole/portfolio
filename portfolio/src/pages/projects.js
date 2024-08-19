@@ -238,7 +238,7 @@ const projects = () => {
 
 
             <FeaturedProjectNoLink
-              title="Ideal Food Basket Internal PO System"
+              title="Ideal Food Basket Custom Internal Ordering System"
               techStack="Angular, Express, JWT, Prisma, PostgreSQL, AWS, Docker, Heroku"
               img={ideal}
               summary="
