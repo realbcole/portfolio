@@ -89,28 +89,37 @@ const about = () => {
                 Biography
               </h2>
               <p className="font-medium text-xl lg:text-sm">
-                Hi, I&apos;m Brandon Cole, a fourth year RIT student majoring in
-                Game Design and Development. As a passionate developer, I bring
-                a unique blend of creativity and technical expertise to every
-                project I work on. Whether I&apos;m developing an interactive
-                web app or designing a captivating game my goal is always the
-                same: to create digital experiences that leave a lasting
-                impression on users.
+                Hi, I&apos;m Brandon Cole, a student at Rochester Institute of
+                Technology pursuing a Bachelor of Science in Game Design and Development.
+                As a passionate full-stack developer and co-founder of Ideal Software LLC,
+                I bring a unique blend of creativity, technical expertise, and entrepreneurial
+                spirit to every project I undertake.
               </p>
               <p className="font-medium my-4 text-xl lg:text-sm">
-                With a background in game design and development, I&apos;ve
-                always been drawn to the intersection of creativity and
-                technology. From programming in C++ to designing in Unity,
-                I&apos;ve honed my skills in a variety of tools and platforms.
-                But more than anything, I&apos;m driven by the desire to create
-                compelling experiences that engage and delight users.
+                My journey in tech has taken me from game development to web applications and
+                custom software solutions. Whether I&apos;m developing an interactive web app, designing
+                a captivating game, or creating tailored business systems, my goal remains consistent:
+                to craft digital experiences that are both innovative and user-centric.
               </p>
               <p className="font-medium text-xl lg:text-sm">
-                Whether I&apos;m working on a website, game, or another digital
-                experience, I bring my commitment to design excellence and
-                user-centered thinking to every project I work on. I look
-                forward to the opportunity to bring my skills and passion to
-                your next project.
+                My background in game design and development has instilled in me a deep
+                appreciation for the intersection of creativity and technology. From programming in C++
+                and JavaScript to designing in Unity and Angular, I&apos;ve honed my skills across a variety
+                of tools and platforms. This diverse skill set allows me to approach problems from multiple
+                angles and deliver comprehensive solutions.
+              </p>
+              <p className="font-medium my-4 text-xl lg:text-sm">
+                In my recent roles, including a co-op at Sandbox Union and co-founding Ideal Software LLC,
+                I&apos;ve had the opportunity to work on real-world projects that have further refined my abilities
+                in full-stack development, project management, and client relations. These experiences have
+                reinforced my commitment to creating software that not only meets technical requirements but
+                also drives business growth and enhances user experiences.
+              </p>
+              <p className="font-medium text-xl lg:text-sm">
+                I&apos;m excited about the future of technology and the opportunity to contribute to innovative projects.
+                Whether it&apos;s a website, a game, or a custom software solution, I bring my passion for excellence,
+                user-centered thinking, and collaborative spirit to every endeavor. I look forward to the opportunity
+                to bring my skills and enthusiasm to your next project.
               </p>
             </div>
             {/* Image */}
@@ -131,7 +140,7 @@ const about = () => {
             <div className="col-span-2 flex flex-col items-end justify-between xl:col-span-8 xl:flex-row xl:items-center md:order-3">
               <AnimatedNumbers value={5} text="years coding" />
               <AnimatedNumbers value={10} text="projects completed" />
-              <AnimatedNumbers value={450} text="LinkedIn Connections" />
+              <AnimatedNumbers value={500} text="LinkedIn Connections" />
             </div>
           </div>
           <Skills />

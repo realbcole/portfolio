@@ -40,10 +40,11 @@ export default function Home() {
               <AnimatedText text="Code and Creativity Combined." className='!text-6xl !text-left 
               xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl' />
               <p className='my-4 text-base font-medium md:text-sm sm:text-xs'>
-                Exploring the intersection of design and development to create engaging interactive experiences.
-                With a focus on user-centered design, I strive to create digital experiences that are not only
-                aesthetically pleasing but also highly functional and intuitive. Browse my portfolio to see how I
-                bring my unique approach to life.
+                With a focus on user-centered design and full-stack expertise, I craft digital solutions that are
+                not only aesthetically pleasing but also highly functional and intuitive. From websites to
+                custom software systems, I bring ideas to life through innovative coding and creative problem-solving.
+                Browse my portfolio to see how I leverage cutting-edge technologies and collaborative approaches to
+                deliver impactful digital experiences.
               </p>
               {/* Resume & Contact buttons */}
               <div className='flex items-center self-start mt-2 lg:self-center'>
