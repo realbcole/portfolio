@@ -40,8 +40,6 @@ const contact = () => {
         <Layout className="flex flex-col justify-between items-center w-full pt-16">
           <AnimatedText
             text="Let's Connect!"
-            className="!text-6xl 
-                    xl:!text-5xl lg:!text-6xl md:!text-5xl sm:!text-3xl"
           />
           <p className="my-4 text-base font-medium md:text-sm sm:text-xs w-8/12 text-center">
             Thanks for checking out my portfolio! I&apos;m always excited to

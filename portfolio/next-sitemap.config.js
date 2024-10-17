@@ -23,6 +23,12 @@ module.exports = {
         priority: 0.9,
       },
       {
+        loc: '/blog', // the url for your page
+        lastmod: new Date().toISOString(),
+        changefreq: 'daily',
+        priority: 0.9,
+      },
+      {
         loc: '/audiovisualizer', // the url for your page
         lastmod: new Date().toISOString(),
         changefreq: 'daily',

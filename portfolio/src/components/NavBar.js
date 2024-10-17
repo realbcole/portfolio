@@ -11,7 +11,7 @@ const CustomLink = ({ href, title, className = "" }) => {
     // useRouter hook
     const router = useRouter();
     return (
-        <Link href={href} className={`${className} relative group`}>
+        <Link href={href} className={`${className} relative group text-medium xl:text-sm`}>
             {title}
             <span className={`h-[1px] inline-block w-0 bg-dark absolute left-0 -bottom-0.5
             group-hover:w-full transition-[width] ease duration-300 dark:bg-light 
@@ -75,7 +75,8 @@ const NavBar = () => {
                     <CustomLink href="/" title="Home" className='mr-4' />
                     <CustomLink href="/about" title="About" className='mx-4' />
                     <CustomLink href="/projects" title="Projects" className='mx-4' />
-                    <CustomLink href="/contact" title="Contact" className='ml-4' />
+                    <CustomLink href="/contact" title="Contact" className='mx-4' />
+                    <CustomLink href="/blog" title="Blog" className='ml-4' />
                 </nav>
                 <nav className='flex items-center justify-center flex-wrap'>
                     <motion.a href="https://github.com/realbcole" target="_blank"
