@@ -121,6 +121,7 @@ const NavBar = () => {
                             <CustomMobileLink href="/about" title="About" className='' toggle={handleClick} />
                             <CustomMobileLink href="/projects" title="Projects" className='' toggle={handleClick} />
                             <CustomMobileLink href="/contact" title="Contact" className='' toggle={handleClick} />
+                            <CustomMobileLink href="/blog" title="Blog" className='' toggle={handleClick} />
                         </nav>
                         <nav className='flex items-center justify-center flex-wrap mt-2'>
                             <motion.a href="https://github.com/realbcole" target="_blank"
