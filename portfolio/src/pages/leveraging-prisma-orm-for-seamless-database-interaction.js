@@ -37,7 +37,7 @@ const Post = () => {
                     className="rounded-xl"
                 />
 
-                <p className="font-medium text-lg mt-4 dark:text-light/80 sm:text-sm xs:text-xs">
+                <p className="font-medium text-lg mt-4 dark:text-light/80 sm:text-sm xs:text-xs sm:w-7/8 xs:w-10/12">
                     As developers, one of the biggest hurdles we face is managing databases efficiently. Whether it’s fine-tuning queries or structuring complex relationships, things inevitably get more complicated as your data grows. Before you know it, you’re caught up writing complex SQL queries and troubleshooting performance issues, all while trying to keep your schema clean and maintainable.
                     <br />
                     <br />
