@@ -3,6 +3,7 @@ import Layout from "@/components/Layout";
 import TransitionEffect from "@/components/TransitionEffect";
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import SyntaxHighlighter from "react-syntax-highlighter/dist/cjs/light";
 import { a11yDark } from "react-syntax-highlighter/dist/cjs/styles/hljs";
 
@@ -36,6 +37,8 @@ const Post = () => {
                     height={900}
                     className="rounded-xl"
                 />
+
+                <p className="font-medium text-lg mt-4 text-primary dark:text-primaryDark sm:text-sm xs:text-xs sm:w-[90%]">This post was originally written by me for the <Link className="hover:bg-primary dark:hover:bg-primaryDark hover:text-light dark:hover:text-dark underline underline-offset-2" href="https://sandboxunion.com/blog" target="_blank">Sandbox Union blog</Link></p>
 
                 <p className="font-medium text-lg mt-4 dark:text-light/80 sm:text-sm xs:text-xs sm:w-[90%]">
                     As developers, one of the biggest hurdles we face is managing databases efficiently. Whether it’s fine-tuning queries or structuring complex relationships, things inevitably get more complicated as your data grows. Before you know it, you’re caught up writing complex SQL queries and troubleshooting performance issues, all while trying to keep your schema clean and maintainable.

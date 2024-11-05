@@ -34,7 +34,10 @@ const BlogCard = (props) => {
 const Blog = () => {
     const blogPosts = [
         { title: "Leveraging Prisma ORM for Seamless Database Interaction", img: '/images/blog/prisma.webp', link: '/leveraging-prisma-orm-for-seamless-database-interaction', date: 'September 20, 2024', description: 'As developers, one of the biggest hurdles we face is managing databases efficiently. Whether it’s fine-tuning queries or structuring complex relationships, things inevitably get more complicated as your data grows. Before you know it, you’re caught up writing complex SQL queries and troubleshooting performance issues, all while trying to keep your schema clean and maintainable. That’s where Prisma ORM comes in: a tool designed to simplify your database interactions without sacrificing performance. Imagine having a clean, type safe interface for your database that’s intuitive and fast. Prisma’s approach to schema design, query building, and migrations can save you from the headaches of traditional ORMs while providing a modern, developer-friendly experience.' },
+        { title: "The Power of WebSockets for Creating Real-Time Web Apps", img: '/images/blog/websockets.webp', link: '/the-power-of-websockets-for-creating-real-time-web-apps', date: 'October 31, 2024', description: 'Remember the days of repeatedly refreshing web pages, hoping for new content to appear? Whether you were looking for a new email or waiting for a product release, staying updated in real time was hard. We’ve all been there. In the world of web development, creating responsive, real-time applications has always been a challenge. Traditional HTTP requests, while functional, often fall short when it comes to instant updates and live data. This is where WebSockets come into play, transforming how we build interactive web experiences. In this post, we’ll explore what WebSockets are, why they matter, and how you can start using them in your projects.' },
     ];
+
+    blogPosts.sort((a, b) => new Date(b.date) - new Date(a.date));
 
     return (
         <>
@@ -62,7 +65,7 @@ const Blog = () => {
                         Welcome to my blog! I write about web development, programming, and other tech-related topics.
                     </p>
                     {/* Blog list */}
-                    <div className="mt-8">
+                    <div className="mt-8 flex flex-col gap-10">
                         {blogPosts.map((post, index) => (
                             <BlogCard
                                 key={index}
