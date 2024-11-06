@@ -159,16 +159,16 @@ httpServer.listen(3000, () => {
                     While WebSockets offer powerful capabilities, it’s important to use them properly and follow best practices:
                     <br />
                     <br />
-                    <ol className="list-decimal list-inside dark:text-light pl-4">
-                        <li><b>Use WebSockets for Real-time Features Only:</b> Not everything needs to be real-time, and overuse can lead to unnecessary complexity.</li>
+                    <ol className="list-decimal list-inside dark:text-light/80 pl-4">
+                        <li><b className="dark:text-light">Use WebSockets for Real-time Features Only:</b> Not everything needs to be real-time, and overuse can lead to unnecessary complexity.</li>
                         <br />
-                        <li><b>Implement Proper Error Handling:</b> WebSocket connections can fail or be interrupted. Always include reconnection logic to ensure a smooth user experience.</li>
+                        <li><b className="dark:text-light">Implement Proper Error Handling:</b> WebSocket connections can fail or be interrupted. Always include reconnection logic to ensure a smooth user experience.</li>
                         <br />
-                        <li><b>Consider Security:</b> While WebSockets are generally secure, especially when used with WSS (WebSocket Secure), make sure to implement proper authentication and authorization. </li>
+                        <li><b className="dark:text-light">Consider Security:</b> While WebSockets are generally secure, especially when used with WSS (WebSocket Secure), make sure to implement proper authentication and authorization. </li>
                         <br />
-                        <li><b>Scale Carefully:</b> While WebSockets are efficient, maintaining many open connections can still be resource-intensive. Plan your infrastructure accordingly if you expect to handle a large number of simultaneous connections.</li>
+                        <li><b className="dark:text-light">Scale Carefully:</b> While WebSockets are efficient, maintaining many open connections can still be resource-intensive. Plan your infrastructure accordingly if you expect to handle a large number of simultaneous connections.</li>
                         <br />
-                        <li><b>Provide Fallbacks:</b> Not all clients support WebSockets. Consider providing fallback mechanisms (like long-polling) for these cases. Socket.IO, for instance, automatically falls back to other techniques if WebSockets aren’t available.</li>
+                        <li><b className="dark:text-light">Provide Fallbacks:</b> Not all clients support WebSockets. Consider providing fallback mechanisms (like long-polling) for these cases. Socket.IO, for instance, automatically falls back to other techniques if WebSockets aren’t available.</li>
                     </ol>
                     <br />
                     <span className="font-bold dark:text-light">Impact</span>
